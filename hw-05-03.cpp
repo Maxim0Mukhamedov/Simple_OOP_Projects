@@ -20,8 +20,10 @@ int main() {
               << '\n';
     for (i = 0, a; a <= b && (p == 0 || std::abs(p) > epsilon); a += delta, i += 1) {
         x = a;
-        p = std::pow(2*x, i) / std::tgamma(i + 1);
-        s += p;
+        for (i = 0; std::abs(p) > epsilon && p != 0; i += 1) {
+            p = std::pow(2*x, i) / std::tgamma(i + 1);
+            s += p;
+        }
         f = std::pow(M_E,2 * x);
         std::cout << '|' << std::setw(10) << x << '|' << std::setw(10) << s << '|' << std::setw(10) << f << '|' << '\n';
     }
