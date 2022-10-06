@@ -19,8 +19,10 @@ int main() {
               << '\n';
     for (i = 0, a; a <= b && (p == 0 || std::abs(p) > epsilon); a += delta, i += 1) {
         x = a;
-        p = std::pow(x, i) * std::sin(i * M_PI / 4);
-        s += p;
+        for (i = 0; std::abs(p) > epsilon && p != 0; i += 1) {
+            p = std::pow(x, i) * std::sin(i * M_PI / 4);
+            s += p;
+        }
         f = (x * std::sin(M_PI / 4)) / (1 - 2 * x * std::cos(M_PI / 4));
         std::cout << '|' << std::setw(10) << x << '|' << std::setw(10) << s << '|' << std::setw(10) << f << '|' << '\n';
     }
