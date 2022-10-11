@@ -16,7 +16,7 @@ int main()
     int i = 0;
     std::cout.flags(std::ios::left);
     std::cout << '|' << std::setw(10) << 'x' << '|' << std::setw(10)  << "s(x)"<< '|' << std::setw(10)  << "f(x)" << '|' << '\n';
-    for (a; a <= b; a += delta) {
+    for (a; a < b + delta; a += delta) {
         x = a;
         p = 0;
         s = 0;
