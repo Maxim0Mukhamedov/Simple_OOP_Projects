@@ -20,6 +20,9 @@ int main() {
               << '\n';
     for (i = 0, a; a <= b && (p == 0 || std::abs(p) > epsilon); a += delta, i += 1) {
         x = a;
+        if (std::abs(x) < delta) {
+            x = 0;
+        }
         for (i = 0; std::abs(p) > epsilon && p != 0; i += 1) {
             p = std::pow(2*x, i) / std::tgamma(i + 1);
             s += p;
