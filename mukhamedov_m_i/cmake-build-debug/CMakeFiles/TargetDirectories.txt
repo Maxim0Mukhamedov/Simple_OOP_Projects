@@ -1,0 +1,2 @@
+D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rebuild_cache.dir
