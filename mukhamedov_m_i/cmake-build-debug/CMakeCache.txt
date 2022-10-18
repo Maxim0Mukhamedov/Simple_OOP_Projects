@@ -151,7 +151,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=mukhamedov_m_i
+CMAKE_PROJECT_NAME:STATIC=misis-proga
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=D:/CLion 2022.2.3/bin/mingw/bin/ranlib.exe
@@ -241,6 +241,15 @@ Project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Project_SOURCE_DIR:STATIC=D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i
+
+//Value Computed by CMake
+misis-proga_BINARY_DIR:STATIC=D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug
+
+//Value Computed by CMake
+misis-proga_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+misis-proga_SOURCE_DIR:STATIC=D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i
 
 //Value Computed by CMake
 mukhamedov_m_i_BINARY_DIR:STATIC=D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug
