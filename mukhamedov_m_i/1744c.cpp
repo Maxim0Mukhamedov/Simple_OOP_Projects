@@ -15,11 +15,11 @@ int main() {
         for (int j = 0; j <= 2 * n; ++j) {
             if (s[j % n] == c && dist == 0 && c != 'g') {
                 dist = 1;
-            } else if (s[j % n] != 'g') {
+            } else if (s[j % n] != 'g' && dist != 0) {
                 dist += 1;
             } else if (s[j % n] == 'g') {
                 maxDist = (dist > maxDist) ? dist : maxDist;
-                dist = -1;
+                dist = 0;
             }
         }
         std::cout << maxDist << '\n';

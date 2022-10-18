@@ -60,18 +60,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e152702b-131c-4af1-bf87-b1066e2d7117" name="Changes" comment="_">
-      <change afterPath="$PROJECT_DIR$/mukhamedov_m_i/1744c.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/build.ninja" afterDir="false" />
-    </list>
+    <list default="true" id="e152702b-131c-4af1-bf87-b1066e2d7117" name="Changes" comment="_" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -387,7 +376,7 @@
       <workItem from="1665588766408" duration="476000" />
       <workItem from="1665590667349" duration="3745000" />
       <workItem from="1666092926812" duration="3398000" />
-      <workItem from="1666096642742" duration="328000" />
+      <workItem from="1666096642742" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="_">
       <created>1665589042815</created>
@@ -417,7 +406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666095564934</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="_">
+      <created>1666097066522</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666097066522</updated>
+    </task>
+    <task id="LOCAL-00006" summary="_">
+      <created>1666097118765</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666097118765</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
