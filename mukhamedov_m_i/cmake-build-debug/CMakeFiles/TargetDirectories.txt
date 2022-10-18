@@ -34,6 +34,7 @@ D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/1717b
 D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/1721b.dir
 D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/1729c.dir
 D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/1734b.dir
+D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/1744c.dir
 D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/CMakeCXXCompilerId.dir
 D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/hw-05-01.dir
 D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug/CMakeFiles/hw-05-02.dir

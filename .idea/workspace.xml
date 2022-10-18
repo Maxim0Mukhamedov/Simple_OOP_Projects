@@ -33,6 +33,7 @@
       <config projectName="misis-proga" targetName="1352a" />
       <config projectName="misis-proga" targetName="1734b" />
       <config projectName="misis-proga" targetName="1512c" />
+      <config projectName="misis-proga" targetName="1744c" />
       <config projectName="misis-proga" targetName="0318a" />
       <config projectName="misis-proga" targetName="0217a" />
       <config projectName="misis-proga" targetName="1100c" />
@@ -60,11 +61,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e152702b-131c-4af1-bf87-b1066e2d7117" name="Changes" comment="_">
-      <change afterPath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mukhamedov_m_i/1744c.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/0951a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/0951a.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/1501a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/1501a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
@@ -125,7 +126,7 @@
       <recent name="D:\ClionProject\mukhamedov_m_i\mukhamedov_m_i" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.1352a">
+  <component name="RunManager" selected="CMake Application.1744c">
     <configuration name="0004a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0004a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0004a">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -306,12 +307,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CMakeCXXCompilerId" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="CMakeCXXCompilerId" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="CMakeCXXCompilerId">
+    <configuration name="1744c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1744c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1744c">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="CMakeCXXCompilerId" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="CMakeCXXCompilerId" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="CMakeCXXCompilerId">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -368,6 +369,7 @@
       <item itemvalue="CMake Application.1721b" />
       <item itemvalue="CMake Application.1729c" />
       <item itemvalue="CMake Application.1734b" />
+      <item itemvalue="CMake Application.1744c" />
       <item itemvalue="CMake Application.CMakeCXXCompilerId" />
       <item itemvalue="CMake Application.hw-05-01" />
       <item itemvalue="CMake Application.hw-05-02" />
@@ -384,7 +386,8 @@
       <updated>1665588764378</updated>
       <workItem from="1665588766408" duration="476000" />
       <workItem from="1665590667349" duration="3745000" />
-      <workItem from="1666092926812" duration="2104000" />
+      <workItem from="1666092926812" duration="3398000" />
+      <workItem from="1666096642742" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="_">
       <created>1665589042815</created>
@@ -407,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666093446442</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="_">
+      <created>1666095564934</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666095564934</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
