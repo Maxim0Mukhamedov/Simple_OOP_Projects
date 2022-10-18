@@ -4,6 +4,8 @@
 #include <algorithm>
 #define _USE_MATH_DEFINES
 
+// Доделать дома!!!!!!! Смассивом.
+
 int main() {
     int t;
     std::cin >> t;

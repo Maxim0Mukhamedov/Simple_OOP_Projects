@@ -11,6 +11,6 @@ file(GLOB_RECURSE SOURCE_LIST
 
 foreach(file ${SOURCE_LIST})
     get_filename_component(file_name ${file} NAME_WE)
-    add_executable(${file_name} ${file})
+    add_executable(${file_name} ${file} 1692c.cpp)
     target_link_libraries(${file_name} PUBLIC settings)
 endforeach()

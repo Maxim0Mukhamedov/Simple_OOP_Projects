@@ -10,7 +10,48 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="misis-proga" targetName="1585a" />
+      <config projectName="misis-proga" targetName="0977a" />
+      <config projectName="misis-proga" targetName="1501a" />
+      <config projectName="misis-proga" targetName="1721b" />
+      <config projectName="misis-proga" targetName="1692f" />
+      <config projectName="misis-proga" targetName="1670b" />
+      <config projectName="misis-proga" targetName="hw-05-03" />
+      <config projectName="misis-proga" targetName="1680b" />
+      <config projectName="misis-proga" targetName="hw-05-02" />
+      <config projectName="misis-proga" targetName="1692c" />
+      <config projectName="misis-proga" targetName="hw-05-01" />
+      <config projectName="misis-proga" targetName="0110a" />
+      <config projectName="misis-proga" targetName="0263a" />
+      <config projectName="misis-proga" targetName="0136a" />
+      <config projectName="misis-proga" targetName="0136b" />
+      <config projectName="misis-proga" targetName="1649a" />
+      <config projectName="misis-proga" targetName="1671a" />
+      <config projectName="misis-proga" targetName="0978a" />
+      <config projectName="misis-proga" targetName="1330a" />
+      <config projectName="misis-proga" targetName="1352a" />
+      <config projectName="misis-proga" targetName="1734b" />
+      <config projectName="misis-proga" targetName="1512c" />
+      <config projectName="misis-proga" targetName="0318a" />
+      <config projectName="misis-proga" targetName="0217a" />
+      <config projectName="misis-proga" targetName="1100c" />
+      <config projectName="misis-proga" targetName="0617a" />
+      <config projectName="misis-proga" targetName="0004a" />
+      <config projectName="misis-proga" targetName="0276a" />
+      <config projectName="misis-proga" targetName="CMakeCXXCompilerId" />
+      <config projectName="misis-proga" targetName="0478a" />
+      <config projectName="misis-proga" targetName="0951a" />
+      <config projectName="misis-proga" targetName="1559a" />
+      <config projectName="misis-proga" targetName="1626b" />
+      <config projectName="misis-proga" targetName="1701a" />
+      <config projectName="misis-proga" targetName="1703c" />
+      <config projectName="misis-proga" targetName="1327a" />
+      <config projectName="misis-proga" targetName="1404a" />
+      <config projectName="misis-proga" targetName="1717b" />
+      <config projectName="misis-proga" targetName="1729c" />
+      <config projectName="misis-proga" targetName="0082a" />
+    </generated>
   </component>
   <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
@@ -19,16 +60,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e152702b-131c-4af1-bf87-b1066e2d7117" name="Changes" comment="_">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/0951a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/0951a.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/1501a.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/1501a.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/cache-v2-2db436242082bd0fbe43.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-441020fa7e2a50402005.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-512774b0f8d1ca472b37.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-12T16-10-23-0495.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-ddf6853b0f9ae43977f8.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/build.ninja" afterDir="false" />
@@ -87,12 +125,254 @@
       <recent name="D:\ClionProject\mukhamedov_m_i\mukhamedov_m_i" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="CMake Application.1352a">
+    <configuration name="0004a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0004a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0004a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0082a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0082a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0082a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0110a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0110a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0110a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0136a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0136a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0136a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0136b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0136b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0136b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0217a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0217a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0217a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0263a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0263a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0263a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0276a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0276a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0276a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0318a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0318a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0318a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0478a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0478a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0478a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0617a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0617a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0617a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0951a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0951a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0951a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0977a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0977a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0977a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="0978a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0978a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0978a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1100c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1100c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1100c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1327a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1327a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1327a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1330a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1330a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1330a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1352a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1352a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1352a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1404a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1404a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1404a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1501a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1501a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1501a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1512c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1512c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1512c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1559a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1559a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1559a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1585a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1585a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1585a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1626b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1626b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1626b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1649a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1649a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1649a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1670b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1670b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1670b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1671a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1671a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1671a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1680b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1680b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1680b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1692c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1692c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1692c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1692f" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1692f" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1692f">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1701a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1701a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1701a">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1703c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1703c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1703c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1717b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1717b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1717b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1721b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1721b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1721b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1729c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1729c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1729c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1734b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1734b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1734b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CMakeCXXCompilerId" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="CMakeCXXCompilerId" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="CMakeCXXCompilerId">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="hw-05-01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="hw-05-01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="hw-05-01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hw-05-02" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="hw-05-02" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="hw-05-02">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="hw-05-03" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="hw-05-03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="hw-05-03">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.0004a" />
+      <item itemvalue="CMake Application.0082a" />
+      <item itemvalue="CMake Application.0110a" />
+      <item itemvalue="CMake Application.0136a" />
+      <item itemvalue="CMake Application.0136b" />
+      <item itemvalue="CMake Application.0217a" />
+      <item itemvalue="CMake Application.0263a" />
+      <item itemvalue="CMake Application.0276a" />
+      <item itemvalue="CMake Application.0318a" />
+      <item itemvalue="CMake Application.0478a" />
+      <item itemvalue="CMake Application.0617a" />
+      <item itemvalue="CMake Application.0951a" />
+      <item itemvalue="CMake Application.0977a" />
+      <item itemvalue="CMake Application.0978a" />
+      <item itemvalue="CMake Application.1100c" />
+      <item itemvalue="CMake Application.1327a" />
+      <item itemvalue="CMake Application.1330a" />
+      <item itemvalue="CMake Application.1352a" />
+      <item itemvalue="CMake Application.1404a" />
+      <item itemvalue="CMake Application.1501a" />
+      <item itemvalue="CMake Application.1512c" />
+      <item itemvalue="CMake Application.1559a" />
+      <item itemvalue="CMake Application.1585a" />
+      <item itemvalue="CMake Application.1626b" />
+      <item itemvalue="CMake Application.1649a" />
+      <item itemvalue="CMake Application.1670b" />
+      <item itemvalue="CMake Application.1671a" />
+      <item itemvalue="CMake Application.1680b" />
+      <item itemvalue="CMake Application.1692c" />
+      <item itemvalue="CMake Application.1692f" />
+      <item itemvalue="CMake Application.1701a" />
+      <item itemvalue="CMake Application.1703c" />
+      <item itemvalue="CMake Application.1717b" />
+      <item itemvalue="CMake Application.1721b" />
+      <item itemvalue="CMake Application.1729c" />
+      <item itemvalue="CMake Application.1734b" />
+      <item itemvalue="CMake Application.CMakeCXXCompilerId" />
+      <item itemvalue="CMake Application.hw-05-01" />
+      <item itemvalue="CMake Application.hw-05-02" />
+      <item itemvalue="CMake Application.hw-05-03" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -104,7 +384,7 @@
       <updated>1665588764378</updated>
       <workItem from="1665588766408" duration="476000" />
       <workItem from="1665590667349" duration="3745000" />
-      <workItem from="1666092926812" duration="476000" />
+      <workItem from="1666092926812" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="_">
       <created>1665589042815</created>
@@ -120,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665591052199</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="_">
+      <created>1666093446442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666093446442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
