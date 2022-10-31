@@ -7,26 +7,23 @@ int main() {
     std::cin >> t;
     for (int i = 0; i < t; i += 1) {
         std::string s;
-        std::vector<int> a;
+        std::vector<int> a(8,0);
+        std::vector<int> ind(8,0);
         int cntStar = 0;
         int ans = 0;
         for (int j = 0; j < 8; ++j) {
             std::cin >> s;
-            cntStar = 0;
             for (int k = 0; k < 8; ++k) {
-                if (s[j] == '#') {
-                    cntStar += 1;
-                }
-            }
-            ans = 0;
-            if (cntStar == 1) {
-                for (int k = 0; k < 8; ++k) {
-                    if (s[j] == '#') {
-                        ans = (j+1)*10 + (k + 1);
-                    }
+                if (s[k] == '#') {
+                    ind[k] = j;
+                    a[k] += 1;
                 }
             }
         }
-        std::cout << ans/10 << ' ' << ans % 10 << '\n';
+        for (int j = 1; j < 7; ++j) {
+            if (a[j] == 1 && a[j - 1] == 2 && a[j + 1] == 2) {
+                std::cout << ind[j] + 1 << ' ' << j + 1 << '\n';
+            }
+        }
     }
 }

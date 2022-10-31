@@ -55,18 +55,6 @@ build CMakeFiles/0004a.dir/0004a.cpp.obj: CXX_COMPILER__0004a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0004a.dir
   OBJECT_FILE_DIR = CMakeFiles\0004a.dir
 
-build CMakeFiles/0004a.dir/1692c.cpp.obj: CXX_COMPILER__0004a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0004a
-  DEP_FILE = CMakeFiles\0004a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0004a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0004a.dir
-
-build CMakeFiles/0004a.dir/1744c.cpp.obj: CXX_COMPILER__0004a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0004a
-  DEP_FILE = CMakeFiles\0004a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0004a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0004a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0004a
@@ -75,7 +63,7 @@ build CMakeFiles/0004a.dir/1744c.cpp.obj: CXX_COMPILER__0004a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0004a.exe
 
-build 0004a.exe: CXX_EXECUTABLE_LINKER__0004a_Debug CMakeFiles/0004a.dir/0004a.cpp.obj CMakeFiles/0004a.dir/1692c.cpp.obj CMakeFiles/0004a.dir/1744c.cpp.obj
+build 0004a.exe: CXX_EXECUTABLE_LINKER__0004a_Debug CMakeFiles/0004a.dir/0004a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0004a.dir
@@ -100,18 +88,6 @@ build CMakeFiles/0082a.dir/0082a.cpp.obj: CXX_COMPILER__0082a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0082a.dir
   OBJECT_FILE_DIR = CMakeFiles\0082a.dir
 
-build CMakeFiles/0082a.dir/1692c.cpp.obj: CXX_COMPILER__0082a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0082a
-  DEP_FILE = CMakeFiles\0082a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0082a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0082a.dir
-
-build CMakeFiles/0082a.dir/1744c.cpp.obj: CXX_COMPILER__0082a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0082a
-  DEP_FILE = CMakeFiles\0082a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0082a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0082a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0082a
@@ -120,7 +96,7 @@ build CMakeFiles/0082a.dir/1744c.cpp.obj: CXX_COMPILER__0082a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0082a.exe
 
-build 0082a.exe: CXX_EXECUTABLE_LINKER__0082a_Debug CMakeFiles/0082a.dir/0082a.cpp.obj CMakeFiles/0082a.dir/1692c.cpp.obj CMakeFiles/0082a.dir/1744c.cpp.obj
+build 0082a.exe: CXX_EXECUTABLE_LINKER__0082a_Debug CMakeFiles/0082a.dir/0082a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0082a.dir
@@ -145,18 +121,6 @@ build CMakeFiles/0110a.dir/0110a.cpp.obj: CXX_COMPILER__0110a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0110a.dir
   OBJECT_FILE_DIR = CMakeFiles\0110a.dir
 
-build CMakeFiles/0110a.dir/1692c.cpp.obj: CXX_COMPILER__0110a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0110a
-  DEP_FILE = CMakeFiles\0110a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0110a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0110a.dir
-
-build CMakeFiles/0110a.dir/1744c.cpp.obj: CXX_COMPILER__0110a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0110a
-  DEP_FILE = CMakeFiles\0110a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0110a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0110a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0110a
@@ -165,7 +129,7 @@ build CMakeFiles/0110a.dir/1744c.cpp.obj: CXX_COMPILER__0110a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0110a.exe
 
-build 0110a.exe: CXX_EXECUTABLE_LINKER__0110a_Debug CMakeFiles/0110a.dir/0110a.cpp.obj CMakeFiles/0110a.dir/1692c.cpp.obj CMakeFiles/0110a.dir/1744c.cpp.obj
+build 0110a.exe: CXX_EXECUTABLE_LINKER__0110a_Debug CMakeFiles/0110a.dir/0110a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0110a.dir
@@ -190,18 +154,6 @@ build CMakeFiles/0136a.dir/0136a.cpp.obj: CXX_COMPILER__0136a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0136a.dir
   OBJECT_FILE_DIR = CMakeFiles\0136a.dir
 
-build CMakeFiles/0136a.dir/1692c.cpp.obj: CXX_COMPILER__0136a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0136a
-  DEP_FILE = CMakeFiles\0136a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0136a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0136a.dir
-
-build CMakeFiles/0136a.dir/1744c.cpp.obj: CXX_COMPILER__0136a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0136a
-  DEP_FILE = CMakeFiles\0136a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0136a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0136a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0136a
@@ -210,7 +162,7 @@ build CMakeFiles/0136a.dir/1744c.cpp.obj: CXX_COMPILER__0136a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0136a.exe
 
-build 0136a.exe: CXX_EXECUTABLE_LINKER__0136a_Debug CMakeFiles/0136a.dir/0136a.cpp.obj CMakeFiles/0136a.dir/1692c.cpp.obj CMakeFiles/0136a.dir/1744c.cpp.obj
+build 0136a.exe: CXX_EXECUTABLE_LINKER__0136a_Debug CMakeFiles/0136a.dir/0136a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0136a.dir
@@ -235,18 +187,6 @@ build CMakeFiles/0136b.dir/0136b.cpp.obj: CXX_COMPILER__0136b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0136b.dir
   OBJECT_FILE_DIR = CMakeFiles\0136b.dir
 
-build CMakeFiles/0136b.dir/1692c.cpp.obj: CXX_COMPILER__0136b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0136b
-  DEP_FILE = CMakeFiles\0136b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0136b.dir
-  OBJECT_FILE_DIR = CMakeFiles\0136b.dir
-
-build CMakeFiles/0136b.dir/1744c.cpp.obj: CXX_COMPILER__0136b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0136b
-  DEP_FILE = CMakeFiles\0136b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0136b.dir
-  OBJECT_FILE_DIR = CMakeFiles\0136b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0136b
@@ -255,7 +195,7 @@ build CMakeFiles/0136b.dir/1744c.cpp.obj: CXX_COMPILER__0136b_Debug D$:/ClionPro
 #############################################
 # Link the executable 0136b.exe
 
-build 0136b.exe: CXX_EXECUTABLE_LINKER__0136b_Debug CMakeFiles/0136b.dir/0136b.cpp.obj CMakeFiles/0136b.dir/1692c.cpp.obj CMakeFiles/0136b.dir/1744c.cpp.obj
+build 0136b.exe: CXX_EXECUTABLE_LINKER__0136b_Debug CMakeFiles/0136b.dir/0136b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0136b.dir
@@ -280,18 +220,6 @@ build CMakeFiles/0217a.dir/0217a.cpp.obj: CXX_COMPILER__0217a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0217a.dir
   OBJECT_FILE_DIR = CMakeFiles\0217a.dir
 
-build CMakeFiles/0217a.dir/1692c.cpp.obj: CXX_COMPILER__0217a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0217a
-  DEP_FILE = CMakeFiles\0217a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0217a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0217a.dir
-
-build CMakeFiles/0217a.dir/1744c.cpp.obj: CXX_COMPILER__0217a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0217a
-  DEP_FILE = CMakeFiles\0217a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0217a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0217a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0217a
@@ -300,7 +228,7 @@ build CMakeFiles/0217a.dir/1744c.cpp.obj: CXX_COMPILER__0217a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0217a.exe
 
-build 0217a.exe: CXX_EXECUTABLE_LINKER__0217a_Debug CMakeFiles/0217a.dir/0217a.cpp.obj CMakeFiles/0217a.dir/1692c.cpp.obj CMakeFiles/0217a.dir/1744c.cpp.obj
+build 0217a.exe: CXX_EXECUTABLE_LINKER__0217a_Debug CMakeFiles/0217a.dir/0217a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0217a.dir
@@ -325,18 +253,6 @@ build CMakeFiles/0263a.dir/0263a.cpp.obj: CXX_COMPILER__0263a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0263a.dir
   OBJECT_FILE_DIR = CMakeFiles\0263a.dir
 
-build CMakeFiles/0263a.dir/1692c.cpp.obj: CXX_COMPILER__0263a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0263a
-  DEP_FILE = CMakeFiles\0263a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0263a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0263a.dir
-
-build CMakeFiles/0263a.dir/1744c.cpp.obj: CXX_COMPILER__0263a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0263a
-  DEP_FILE = CMakeFiles\0263a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0263a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0263a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0263a
@@ -345,7 +261,7 @@ build CMakeFiles/0263a.dir/1744c.cpp.obj: CXX_COMPILER__0263a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0263a.exe
 
-build 0263a.exe: CXX_EXECUTABLE_LINKER__0263a_Debug CMakeFiles/0263a.dir/0263a.cpp.obj CMakeFiles/0263a.dir/1692c.cpp.obj CMakeFiles/0263a.dir/1744c.cpp.obj
+build 0263a.exe: CXX_EXECUTABLE_LINKER__0263a_Debug CMakeFiles/0263a.dir/0263a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0263a.dir
@@ -370,18 +286,6 @@ build CMakeFiles/0276a.dir/0276a.cpp.obj: CXX_COMPILER__0276a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0276a.dir
   OBJECT_FILE_DIR = CMakeFiles\0276a.dir
 
-build CMakeFiles/0276a.dir/1692c.cpp.obj: CXX_COMPILER__0276a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0276a
-  DEP_FILE = CMakeFiles\0276a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0276a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0276a.dir
-
-build CMakeFiles/0276a.dir/1744c.cpp.obj: CXX_COMPILER__0276a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0276a
-  DEP_FILE = CMakeFiles\0276a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0276a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0276a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0276a
@@ -390,7 +294,7 @@ build CMakeFiles/0276a.dir/1744c.cpp.obj: CXX_COMPILER__0276a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0276a.exe
 
-build 0276a.exe: CXX_EXECUTABLE_LINKER__0276a_Debug CMakeFiles/0276a.dir/0276a.cpp.obj CMakeFiles/0276a.dir/1692c.cpp.obj CMakeFiles/0276a.dir/1744c.cpp.obj
+build 0276a.exe: CXX_EXECUTABLE_LINKER__0276a_Debug CMakeFiles/0276a.dir/0276a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0276a.dir
@@ -415,18 +319,6 @@ build CMakeFiles/0318a.dir/0318a.cpp.obj: CXX_COMPILER__0318a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0318a.dir
   OBJECT_FILE_DIR = CMakeFiles\0318a.dir
 
-build CMakeFiles/0318a.dir/1692c.cpp.obj: CXX_COMPILER__0318a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0318a
-  DEP_FILE = CMakeFiles\0318a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0318a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0318a.dir
-
-build CMakeFiles/0318a.dir/1744c.cpp.obj: CXX_COMPILER__0318a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0318a
-  DEP_FILE = CMakeFiles\0318a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0318a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0318a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0318a
@@ -435,7 +327,7 @@ build CMakeFiles/0318a.dir/1744c.cpp.obj: CXX_COMPILER__0318a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0318a.exe
 
-build 0318a.exe: CXX_EXECUTABLE_LINKER__0318a_Debug CMakeFiles/0318a.dir/0318a.cpp.obj CMakeFiles/0318a.dir/1692c.cpp.obj CMakeFiles/0318a.dir/1744c.cpp.obj
+build 0318a.exe: CXX_EXECUTABLE_LINKER__0318a_Debug CMakeFiles/0318a.dir/0318a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0318a.dir
@@ -460,18 +352,6 @@ build CMakeFiles/0478a.dir/0478a.cpp.obj: CXX_COMPILER__0478a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0478a.dir
   OBJECT_FILE_DIR = CMakeFiles\0478a.dir
 
-build CMakeFiles/0478a.dir/1692c.cpp.obj: CXX_COMPILER__0478a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0478a
-  DEP_FILE = CMakeFiles\0478a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0478a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0478a.dir
-
-build CMakeFiles/0478a.dir/1744c.cpp.obj: CXX_COMPILER__0478a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0478a
-  DEP_FILE = CMakeFiles\0478a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0478a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0478a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0478a
@@ -480,7 +360,7 @@ build CMakeFiles/0478a.dir/1744c.cpp.obj: CXX_COMPILER__0478a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0478a.exe
 
-build 0478a.exe: CXX_EXECUTABLE_LINKER__0478a_Debug CMakeFiles/0478a.dir/0478a.cpp.obj CMakeFiles/0478a.dir/1692c.cpp.obj CMakeFiles/0478a.dir/1744c.cpp.obj
+build 0478a.exe: CXX_EXECUTABLE_LINKER__0478a_Debug CMakeFiles/0478a.dir/0478a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0478a.dir
@@ -505,18 +385,6 @@ build CMakeFiles/0617a.dir/0617a.cpp.obj: CXX_COMPILER__0617a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0617a.dir
   OBJECT_FILE_DIR = CMakeFiles\0617a.dir
 
-build CMakeFiles/0617a.dir/1692c.cpp.obj: CXX_COMPILER__0617a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0617a
-  DEP_FILE = CMakeFiles\0617a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0617a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0617a.dir
-
-build CMakeFiles/0617a.dir/1744c.cpp.obj: CXX_COMPILER__0617a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0617a
-  DEP_FILE = CMakeFiles\0617a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0617a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0617a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0617a
@@ -525,7 +393,7 @@ build CMakeFiles/0617a.dir/1744c.cpp.obj: CXX_COMPILER__0617a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0617a.exe
 
-build 0617a.exe: CXX_EXECUTABLE_LINKER__0617a_Debug CMakeFiles/0617a.dir/0617a.cpp.obj CMakeFiles/0617a.dir/1692c.cpp.obj CMakeFiles/0617a.dir/1744c.cpp.obj
+build 0617a.exe: CXX_EXECUTABLE_LINKER__0617a_Debug CMakeFiles/0617a.dir/0617a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0617a.dir
@@ -550,18 +418,6 @@ build CMakeFiles/0951a.dir/0951a.cpp.obj: CXX_COMPILER__0951a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0951a.dir
   OBJECT_FILE_DIR = CMakeFiles\0951a.dir
 
-build CMakeFiles/0951a.dir/1692c.cpp.obj: CXX_COMPILER__0951a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0951a
-  DEP_FILE = CMakeFiles\0951a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0951a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0951a.dir
-
-build CMakeFiles/0951a.dir/1744c.cpp.obj: CXX_COMPILER__0951a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0951a
-  DEP_FILE = CMakeFiles\0951a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0951a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0951a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0951a
@@ -570,7 +426,7 @@ build CMakeFiles/0951a.dir/1744c.cpp.obj: CXX_COMPILER__0951a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0951a.exe
 
-build 0951a.exe: CXX_EXECUTABLE_LINKER__0951a_Debug CMakeFiles/0951a.dir/0951a.cpp.obj CMakeFiles/0951a.dir/1692c.cpp.obj CMakeFiles/0951a.dir/1744c.cpp.obj
+build 0951a.exe: CXX_EXECUTABLE_LINKER__0951a_Debug CMakeFiles/0951a.dir/0951a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0951a.dir
@@ -595,18 +451,6 @@ build CMakeFiles/0977a.dir/0977a.cpp.obj: CXX_COMPILER__0977a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0977a.dir
   OBJECT_FILE_DIR = CMakeFiles\0977a.dir
 
-build CMakeFiles/0977a.dir/1692c.cpp.obj: CXX_COMPILER__0977a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0977a
-  DEP_FILE = CMakeFiles\0977a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0977a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0977a.dir
-
-build CMakeFiles/0977a.dir/1744c.cpp.obj: CXX_COMPILER__0977a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0977a
-  DEP_FILE = CMakeFiles\0977a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0977a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0977a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0977a
@@ -615,7 +459,7 @@ build CMakeFiles/0977a.dir/1744c.cpp.obj: CXX_COMPILER__0977a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0977a.exe
 
-build 0977a.exe: CXX_EXECUTABLE_LINKER__0977a_Debug CMakeFiles/0977a.dir/0977a.cpp.obj CMakeFiles/0977a.dir/1692c.cpp.obj CMakeFiles/0977a.dir/1744c.cpp.obj
+build 0977a.exe: CXX_EXECUTABLE_LINKER__0977a_Debug CMakeFiles/0977a.dir/0977a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0977a.dir
@@ -640,18 +484,6 @@ build CMakeFiles/0978a.dir/0978a.cpp.obj: CXX_COMPILER__0978a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\0978a.dir
   OBJECT_FILE_DIR = CMakeFiles\0978a.dir
 
-build CMakeFiles/0978a.dir/1692c.cpp.obj: CXX_COMPILER__0978a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_0978a
-  DEP_FILE = CMakeFiles\0978a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0978a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0978a.dir
-
-build CMakeFiles/0978a.dir/1744c.cpp.obj: CXX_COMPILER__0978a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_0978a
-  DEP_FILE = CMakeFiles\0978a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\0978a.dir
-  OBJECT_FILE_DIR = CMakeFiles\0978a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 0978a
@@ -660,7 +492,7 @@ build CMakeFiles/0978a.dir/1744c.cpp.obj: CXX_COMPILER__0978a_Debug D$:/ClionPro
 #############################################
 # Link the executable 0978a.exe
 
-build 0978a.exe: CXX_EXECUTABLE_LINKER__0978a_Debug CMakeFiles/0978a.dir/0978a.cpp.obj CMakeFiles/0978a.dir/1692c.cpp.obj CMakeFiles/0978a.dir/1744c.cpp.obj
+build 0978a.exe: CXX_EXECUTABLE_LINKER__0978a_Debug CMakeFiles/0978a.dir/0978a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\0978a.dir
@@ -685,18 +517,6 @@ build CMakeFiles/1100c.dir/1100c.cpp.obj: CXX_COMPILER__1100c_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1100c.dir
   OBJECT_FILE_DIR = CMakeFiles\1100c.dir
 
-build CMakeFiles/1100c.dir/1692c.cpp.obj: CXX_COMPILER__1100c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1100c
-  DEP_FILE = CMakeFiles\1100c.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1100c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1100c.dir
-
-build CMakeFiles/1100c.dir/1744c.cpp.obj: CXX_COMPILER__1100c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1100c
-  DEP_FILE = CMakeFiles\1100c.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1100c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1100c.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1100c
@@ -705,7 +525,7 @@ build CMakeFiles/1100c.dir/1744c.cpp.obj: CXX_COMPILER__1100c_Debug D$:/ClionPro
 #############################################
 # Link the executable 1100c.exe
 
-build 1100c.exe: CXX_EXECUTABLE_LINKER__1100c_Debug CMakeFiles/1100c.dir/1100c.cpp.obj CMakeFiles/1100c.dir/1692c.cpp.obj CMakeFiles/1100c.dir/1744c.cpp.obj
+build 1100c.exe: CXX_EXECUTABLE_LINKER__1100c_Debug CMakeFiles/1100c.dir/1100c.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1100c.dir
@@ -730,18 +550,6 @@ build CMakeFiles/1327a.dir/1327a.cpp.obj: CXX_COMPILER__1327a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1327a.dir
   OBJECT_FILE_DIR = CMakeFiles\1327a.dir
 
-build CMakeFiles/1327a.dir/1692c.cpp.obj: CXX_COMPILER__1327a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1327a
-  DEP_FILE = CMakeFiles\1327a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1327a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1327a.dir
-
-build CMakeFiles/1327a.dir/1744c.cpp.obj: CXX_COMPILER__1327a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1327a
-  DEP_FILE = CMakeFiles\1327a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1327a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1327a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1327a
@@ -750,7 +558,7 @@ build CMakeFiles/1327a.dir/1744c.cpp.obj: CXX_COMPILER__1327a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1327a.exe
 
-build 1327a.exe: CXX_EXECUTABLE_LINKER__1327a_Debug CMakeFiles/1327a.dir/1327a.cpp.obj CMakeFiles/1327a.dir/1692c.cpp.obj CMakeFiles/1327a.dir/1744c.cpp.obj
+build 1327a.exe: CXX_EXECUTABLE_LINKER__1327a_Debug CMakeFiles/1327a.dir/1327a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1327a.dir
@@ -775,18 +583,6 @@ build CMakeFiles/1330a.dir/1330a.cpp.obj: CXX_COMPILER__1330a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1330a.dir
   OBJECT_FILE_DIR = CMakeFiles\1330a.dir
 
-build CMakeFiles/1330a.dir/1692c.cpp.obj: CXX_COMPILER__1330a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1330a
-  DEP_FILE = CMakeFiles\1330a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1330a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1330a.dir
-
-build CMakeFiles/1330a.dir/1744c.cpp.obj: CXX_COMPILER__1330a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1330a
-  DEP_FILE = CMakeFiles\1330a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1330a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1330a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1330a
@@ -795,7 +591,7 @@ build CMakeFiles/1330a.dir/1744c.cpp.obj: CXX_COMPILER__1330a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1330a.exe
 
-build 1330a.exe: CXX_EXECUTABLE_LINKER__1330a_Debug CMakeFiles/1330a.dir/1330a.cpp.obj CMakeFiles/1330a.dir/1692c.cpp.obj CMakeFiles/1330a.dir/1744c.cpp.obj
+build 1330a.exe: CXX_EXECUTABLE_LINKER__1330a_Debug CMakeFiles/1330a.dir/1330a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1330a.dir
@@ -820,18 +616,6 @@ build CMakeFiles/1352a.dir/1352a.cpp.obj: CXX_COMPILER__1352a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1352a.dir
   OBJECT_FILE_DIR = CMakeFiles\1352a.dir
 
-build CMakeFiles/1352a.dir/1692c.cpp.obj: CXX_COMPILER__1352a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1352a
-  DEP_FILE = CMakeFiles\1352a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1352a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1352a.dir
-
-build CMakeFiles/1352a.dir/1744c.cpp.obj: CXX_COMPILER__1352a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1352a
-  DEP_FILE = CMakeFiles\1352a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1352a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1352a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1352a
@@ -840,7 +624,7 @@ build CMakeFiles/1352a.dir/1744c.cpp.obj: CXX_COMPILER__1352a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1352a.exe
 
-build 1352a.exe: CXX_EXECUTABLE_LINKER__1352a_Debug CMakeFiles/1352a.dir/1352a.cpp.obj CMakeFiles/1352a.dir/1692c.cpp.obj CMakeFiles/1352a.dir/1744c.cpp.obj
+build 1352a.exe: CXX_EXECUTABLE_LINKER__1352a_Debug CMakeFiles/1352a.dir/1352a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1352a.dir
@@ -865,18 +649,6 @@ build CMakeFiles/1404a.dir/1404a.cpp.obj: CXX_COMPILER__1404a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1404a.dir
   OBJECT_FILE_DIR = CMakeFiles\1404a.dir
 
-build CMakeFiles/1404a.dir/1692c.cpp.obj: CXX_COMPILER__1404a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1404a
-  DEP_FILE = CMakeFiles\1404a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1404a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1404a.dir
-
-build CMakeFiles/1404a.dir/1744c.cpp.obj: CXX_COMPILER__1404a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1404a
-  DEP_FILE = CMakeFiles\1404a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1404a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1404a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1404a
@@ -885,7 +657,7 @@ build CMakeFiles/1404a.dir/1744c.cpp.obj: CXX_COMPILER__1404a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1404a.exe
 
-build 1404a.exe: CXX_EXECUTABLE_LINKER__1404a_Debug CMakeFiles/1404a.dir/1404a.cpp.obj CMakeFiles/1404a.dir/1692c.cpp.obj CMakeFiles/1404a.dir/1744c.cpp.obj
+build 1404a.exe: CXX_EXECUTABLE_LINKER__1404a_Debug CMakeFiles/1404a.dir/1404a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1404a.dir
@@ -910,18 +682,6 @@ build CMakeFiles/1501a.dir/1501a.cpp.obj: CXX_COMPILER__1501a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1501a.dir
   OBJECT_FILE_DIR = CMakeFiles\1501a.dir
 
-build CMakeFiles/1501a.dir/1692c.cpp.obj: CXX_COMPILER__1501a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1501a
-  DEP_FILE = CMakeFiles\1501a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1501a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1501a.dir
-
-build CMakeFiles/1501a.dir/1744c.cpp.obj: CXX_COMPILER__1501a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1501a
-  DEP_FILE = CMakeFiles\1501a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1501a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1501a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1501a
@@ -930,7 +690,7 @@ build CMakeFiles/1501a.dir/1744c.cpp.obj: CXX_COMPILER__1501a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1501a.exe
 
-build 1501a.exe: CXX_EXECUTABLE_LINKER__1501a_Debug CMakeFiles/1501a.dir/1501a.cpp.obj CMakeFiles/1501a.dir/1692c.cpp.obj CMakeFiles/1501a.dir/1744c.cpp.obj
+build 1501a.exe: CXX_EXECUTABLE_LINKER__1501a_Debug CMakeFiles/1501a.dir/1501a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1501a.dir
@@ -955,18 +715,6 @@ build CMakeFiles/1512c.dir/1512c.cpp.obj: CXX_COMPILER__1512c_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1512c.dir
   OBJECT_FILE_DIR = CMakeFiles\1512c.dir
 
-build CMakeFiles/1512c.dir/1692c.cpp.obj: CXX_COMPILER__1512c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1512c
-  DEP_FILE = CMakeFiles\1512c.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1512c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1512c.dir
-
-build CMakeFiles/1512c.dir/1744c.cpp.obj: CXX_COMPILER__1512c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1512c
-  DEP_FILE = CMakeFiles\1512c.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1512c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1512c.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1512c
@@ -975,7 +723,7 @@ build CMakeFiles/1512c.dir/1744c.cpp.obj: CXX_COMPILER__1512c_Debug D$:/ClionPro
 #############################################
 # Link the executable 1512c.exe
 
-build 1512c.exe: CXX_EXECUTABLE_LINKER__1512c_Debug CMakeFiles/1512c.dir/1512c.cpp.obj CMakeFiles/1512c.dir/1692c.cpp.obj CMakeFiles/1512c.dir/1744c.cpp.obj
+build 1512c.exe: CXX_EXECUTABLE_LINKER__1512c_Debug CMakeFiles/1512c.dir/1512c.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1512c.dir
@@ -1000,18 +748,6 @@ build CMakeFiles/1559a.dir/1559a.cpp.obj: CXX_COMPILER__1559a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1559a.dir
   OBJECT_FILE_DIR = CMakeFiles\1559a.dir
 
-build CMakeFiles/1559a.dir/1692c.cpp.obj: CXX_COMPILER__1559a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1559a
-  DEP_FILE = CMakeFiles\1559a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1559a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1559a.dir
-
-build CMakeFiles/1559a.dir/1744c.cpp.obj: CXX_COMPILER__1559a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1559a
-  DEP_FILE = CMakeFiles\1559a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1559a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1559a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1559a
@@ -1020,7 +756,7 @@ build CMakeFiles/1559a.dir/1744c.cpp.obj: CXX_COMPILER__1559a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1559a.exe
 
-build 1559a.exe: CXX_EXECUTABLE_LINKER__1559a_Debug CMakeFiles/1559a.dir/1559a.cpp.obj CMakeFiles/1559a.dir/1692c.cpp.obj CMakeFiles/1559a.dir/1744c.cpp.obj
+build 1559a.exe: CXX_EXECUTABLE_LINKER__1559a_Debug CMakeFiles/1559a.dir/1559a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1559a.dir
@@ -1045,18 +781,6 @@ build CMakeFiles/1585a.dir/1585a.cpp.obj: CXX_COMPILER__1585a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1585a.dir
   OBJECT_FILE_DIR = CMakeFiles\1585a.dir
 
-build CMakeFiles/1585a.dir/1692c.cpp.obj: CXX_COMPILER__1585a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1585a
-  DEP_FILE = CMakeFiles\1585a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1585a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1585a.dir
-
-build CMakeFiles/1585a.dir/1744c.cpp.obj: CXX_COMPILER__1585a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1585a
-  DEP_FILE = CMakeFiles\1585a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1585a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1585a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1585a
@@ -1065,7 +789,7 @@ build CMakeFiles/1585a.dir/1744c.cpp.obj: CXX_COMPILER__1585a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1585a.exe
 
-build 1585a.exe: CXX_EXECUTABLE_LINKER__1585a_Debug CMakeFiles/1585a.dir/1585a.cpp.obj CMakeFiles/1585a.dir/1692c.cpp.obj CMakeFiles/1585a.dir/1744c.cpp.obj
+build 1585a.exe: CXX_EXECUTABLE_LINKER__1585a_Debug CMakeFiles/1585a.dir/1585a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1585a.dir
@@ -1090,18 +814,6 @@ build CMakeFiles/1626b.dir/1626b.cpp.obj: CXX_COMPILER__1626b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1626b.dir
   OBJECT_FILE_DIR = CMakeFiles\1626b.dir
 
-build CMakeFiles/1626b.dir/1692c.cpp.obj: CXX_COMPILER__1626b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1626b
-  DEP_FILE = CMakeFiles\1626b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1626b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1626b.dir
-
-build CMakeFiles/1626b.dir/1744c.cpp.obj: CXX_COMPILER__1626b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1626b
-  DEP_FILE = CMakeFiles\1626b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1626b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1626b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1626b
@@ -1110,7 +822,7 @@ build CMakeFiles/1626b.dir/1744c.cpp.obj: CXX_COMPILER__1626b_Debug D$:/ClionPro
 #############################################
 # Link the executable 1626b.exe
 
-build 1626b.exe: CXX_EXECUTABLE_LINKER__1626b_Debug CMakeFiles/1626b.dir/1626b.cpp.obj CMakeFiles/1626b.dir/1692c.cpp.obj CMakeFiles/1626b.dir/1744c.cpp.obj
+build 1626b.exe: CXX_EXECUTABLE_LINKER__1626b_Debug CMakeFiles/1626b.dir/1626b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1626b.dir
@@ -1135,18 +847,6 @@ build CMakeFiles/1649a.dir/1649a.cpp.obj: CXX_COMPILER__1649a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1649a.dir
   OBJECT_FILE_DIR = CMakeFiles\1649a.dir
 
-build CMakeFiles/1649a.dir/1692c.cpp.obj: CXX_COMPILER__1649a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1649a
-  DEP_FILE = CMakeFiles\1649a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1649a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1649a.dir
-
-build CMakeFiles/1649a.dir/1744c.cpp.obj: CXX_COMPILER__1649a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1649a
-  DEP_FILE = CMakeFiles\1649a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1649a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1649a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1649a
@@ -1155,7 +855,7 @@ build CMakeFiles/1649a.dir/1744c.cpp.obj: CXX_COMPILER__1649a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1649a.exe
 
-build 1649a.exe: CXX_EXECUTABLE_LINKER__1649a_Debug CMakeFiles/1649a.dir/1649a.cpp.obj CMakeFiles/1649a.dir/1692c.cpp.obj CMakeFiles/1649a.dir/1744c.cpp.obj
+build 1649a.exe: CXX_EXECUTABLE_LINKER__1649a_Debug CMakeFiles/1649a.dir/1649a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1649a.dir
@@ -1180,18 +880,6 @@ build CMakeFiles/1670b.dir/1670b.cpp.obj: CXX_COMPILER__1670b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1670b.dir
   OBJECT_FILE_DIR = CMakeFiles\1670b.dir
 
-build CMakeFiles/1670b.dir/1692c.cpp.obj: CXX_COMPILER__1670b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1670b
-  DEP_FILE = CMakeFiles\1670b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1670b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1670b.dir
-
-build CMakeFiles/1670b.dir/1744c.cpp.obj: CXX_COMPILER__1670b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1670b
-  DEP_FILE = CMakeFiles\1670b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1670b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1670b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1670b
@@ -1200,7 +888,7 @@ build CMakeFiles/1670b.dir/1744c.cpp.obj: CXX_COMPILER__1670b_Debug D$:/ClionPro
 #############################################
 # Link the executable 1670b.exe
 
-build 1670b.exe: CXX_EXECUTABLE_LINKER__1670b_Debug CMakeFiles/1670b.dir/1670b.cpp.obj CMakeFiles/1670b.dir/1692c.cpp.obj CMakeFiles/1670b.dir/1744c.cpp.obj
+build 1670b.exe: CXX_EXECUTABLE_LINKER__1670b_Debug CMakeFiles/1670b.dir/1670b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1670b.dir
@@ -1225,18 +913,6 @@ build CMakeFiles/1671a.dir/1671a.cpp.obj: CXX_COMPILER__1671a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1671a.dir
   OBJECT_FILE_DIR = CMakeFiles\1671a.dir
 
-build CMakeFiles/1671a.dir/1692c.cpp.obj: CXX_COMPILER__1671a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1671a
-  DEP_FILE = CMakeFiles\1671a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1671a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1671a.dir
-
-build CMakeFiles/1671a.dir/1744c.cpp.obj: CXX_COMPILER__1671a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1671a
-  DEP_FILE = CMakeFiles\1671a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1671a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1671a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1671a
@@ -1245,7 +921,7 @@ build CMakeFiles/1671a.dir/1744c.cpp.obj: CXX_COMPILER__1671a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1671a.exe
 
-build 1671a.exe: CXX_EXECUTABLE_LINKER__1671a_Debug CMakeFiles/1671a.dir/1671a.cpp.obj CMakeFiles/1671a.dir/1692c.cpp.obj CMakeFiles/1671a.dir/1744c.cpp.obj
+build 1671a.exe: CXX_EXECUTABLE_LINKER__1671a_Debug CMakeFiles/1671a.dir/1671a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1671a.dir
@@ -1254,6 +930,39 @@ build 1671a.exe: CXX_EXECUTABLE_LINKER__1671a_Debug CMakeFiles/1671a.dir/1671a.c
   TARGET_FILE = 1671a.exe
   TARGET_IMPLIB = lib1671a.dll.a
   TARGET_PDB = 1671a.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1675c
+
+
+#############################################
+# Order-only phony target for 1675c
+
+build cmake_object_order_depends_target_1675c: phony || CMakeFiles/1675c.dir
+
+build CMakeFiles/1675c.dir/1675c.cpp.obj: CXX_COMPILER__1675c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1675c.cpp || cmake_object_order_depends_target_1675c
+  DEP_FILE = CMakeFiles\1675c.dir\1675c.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\1675c.dir
+  OBJECT_FILE_DIR = CMakeFiles\1675c.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1675c
+
+
+#############################################
+# Link the executable 1675c.exe
+
+build 1675c.exe: CXX_EXECUTABLE_LINKER__1675c_Debug CMakeFiles/1675c.dir/1675c.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1675c.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1675c.exe
+  TARGET_IMPLIB = lib1675c.dll.a
+  TARGET_PDB = 1675c.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 1680b
@@ -1270,18 +979,6 @@ build CMakeFiles/1680b.dir/1680b.cpp.obj: CXX_COMPILER__1680b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1680b.dir
   OBJECT_FILE_DIR = CMakeFiles\1680b.dir
 
-build CMakeFiles/1680b.dir/1692c.cpp.obj: CXX_COMPILER__1680b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1680b
-  DEP_FILE = CMakeFiles\1680b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1680b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1680b.dir
-
-build CMakeFiles/1680b.dir/1744c.cpp.obj: CXX_COMPILER__1680b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1680b
-  DEP_FILE = CMakeFiles\1680b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1680b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1680b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1680b
@@ -1290,7 +987,7 @@ build CMakeFiles/1680b.dir/1744c.cpp.obj: CXX_COMPILER__1680b_Debug D$:/ClionPro
 #############################################
 # Link the executable 1680b.exe
 
-build 1680b.exe: CXX_EXECUTABLE_LINKER__1680b_Debug CMakeFiles/1680b.dir/1680b.cpp.obj CMakeFiles/1680b.dir/1692c.cpp.obj CMakeFiles/1680b.dir/1744c.cpp.obj
+build 1680b.exe: CXX_EXECUTABLE_LINKER__1680b_Debug CMakeFiles/1680b.dir/1680b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1680b.dir
@@ -1299,6 +996,39 @@ build 1680b.exe: CXX_EXECUTABLE_LINKER__1680b_Debug CMakeFiles/1680b.dir/1680b.c
   TARGET_FILE = 1680b.exe
   TARGET_IMPLIB = lib1680b.dll.a
   TARGET_PDB = 1680b.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1690d
+
+
+#############################################
+# Order-only phony target for 1690d
+
+build cmake_object_order_depends_target_1690d: phony || CMakeFiles/1690d.dir
+
+build CMakeFiles/1690d.dir/1690d.cpp.obj: CXX_COMPILER__1690d_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1690d.cpp || cmake_object_order_depends_target_1690d
+  DEP_FILE = CMakeFiles\1690d.dir\1690d.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\1690d.dir
+  OBJECT_FILE_DIR = CMakeFiles\1690d.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1690d
+
+
+#############################################
+# Link the executable 1690d.exe
+
+build 1690d.exe: CXX_EXECUTABLE_LINKER__1690d_Debug CMakeFiles/1690d.dir/1690d.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1690d.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1690d.exe
+  TARGET_IMPLIB = lib1690d.dll.a
+  TARGET_PDB = 1690d.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target 1692c
@@ -1315,12 +1045,6 @@ build CMakeFiles/1692c.dir/1692c.cpp.obj: CXX_COMPILER__1692c_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1692c.dir
   OBJECT_FILE_DIR = CMakeFiles\1692c.dir
 
-build CMakeFiles/1692c.dir/1744c.cpp.obj: CXX_COMPILER__1692c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1692c
-  DEP_FILE = CMakeFiles\1692c.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1692c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1692c.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1692c
@@ -1329,7 +1053,7 @@ build CMakeFiles/1692c.dir/1744c.cpp.obj: CXX_COMPILER__1692c_Debug D$:/ClionPro
 #############################################
 # Link the executable 1692c.exe
 
-build 1692c.exe: CXX_EXECUTABLE_LINKER__1692c_Debug CMakeFiles/1692c.dir/1692c.cpp.obj CMakeFiles/1692c.dir/1744c.cpp.obj
+build 1692c.exe: CXX_EXECUTABLE_LINKER__1692c_Debug CMakeFiles/1692c.dir/1692c.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1692c.dir
@@ -1354,18 +1078,6 @@ build CMakeFiles/1692f.dir/1692f.cpp.obj: CXX_COMPILER__1692f_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1692f.dir
   OBJECT_FILE_DIR = CMakeFiles\1692f.dir
 
-build CMakeFiles/1692f.dir/1692c.cpp.obj: CXX_COMPILER__1692f_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1692f
-  DEP_FILE = CMakeFiles\1692f.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1692f.dir
-  OBJECT_FILE_DIR = CMakeFiles\1692f.dir
-
-build CMakeFiles/1692f.dir/1744c.cpp.obj: CXX_COMPILER__1692f_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1692f
-  DEP_FILE = CMakeFiles\1692f.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1692f.dir
-  OBJECT_FILE_DIR = CMakeFiles\1692f.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1692f
@@ -1374,7 +1086,7 @@ build CMakeFiles/1692f.dir/1744c.cpp.obj: CXX_COMPILER__1692f_Debug D$:/ClionPro
 #############################################
 # Link the executable 1692f.exe
 
-build 1692f.exe: CXX_EXECUTABLE_LINKER__1692f_Debug CMakeFiles/1692f.dir/1692f.cpp.obj CMakeFiles/1692f.dir/1692c.cpp.obj CMakeFiles/1692f.dir/1744c.cpp.obj
+build 1692f.exe: CXX_EXECUTABLE_LINKER__1692f_Debug CMakeFiles/1692f.dir/1692f.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1692f.dir
@@ -1399,18 +1111,6 @@ build CMakeFiles/1701a.dir/1701a.cpp.obj: CXX_COMPILER__1701a_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1701a.dir
   OBJECT_FILE_DIR = CMakeFiles\1701a.dir
 
-build CMakeFiles/1701a.dir/1692c.cpp.obj: CXX_COMPILER__1701a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1701a
-  DEP_FILE = CMakeFiles\1701a.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1701a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1701a.dir
-
-build CMakeFiles/1701a.dir/1744c.cpp.obj: CXX_COMPILER__1701a_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1701a
-  DEP_FILE = CMakeFiles\1701a.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1701a.dir
-  OBJECT_FILE_DIR = CMakeFiles\1701a.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1701a
@@ -1419,7 +1119,7 @@ build CMakeFiles/1701a.dir/1744c.cpp.obj: CXX_COMPILER__1701a_Debug D$:/ClionPro
 #############################################
 # Link the executable 1701a.exe
 
-build 1701a.exe: CXX_EXECUTABLE_LINKER__1701a_Debug CMakeFiles/1701a.dir/1701a.cpp.obj CMakeFiles/1701a.dir/1692c.cpp.obj CMakeFiles/1701a.dir/1744c.cpp.obj
+build 1701a.exe: CXX_EXECUTABLE_LINKER__1701a_Debug CMakeFiles/1701a.dir/1701a.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1701a.dir
@@ -1444,18 +1144,6 @@ build CMakeFiles/1703c.dir/1703c.cpp.obj: CXX_COMPILER__1703c_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1703c.dir
   OBJECT_FILE_DIR = CMakeFiles\1703c.dir
 
-build CMakeFiles/1703c.dir/1692c.cpp.obj: CXX_COMPILER__1703c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1703c
-  DEP_FILE = CMakeFiles\1703c.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1703c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1703c.dir
-
-build CMakeFiles/1703c.dir/1744c.cpp.obj: CXX_COMPILER__1703c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1703c
-  DEP_FILE = CMakeFiles\1703c.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1703c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1703c.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1703c
@@ -1464,7 +1152,7 @@ build CMakeFiles/1703c.dir/1744c.cpp.obj: CXX_COMPILER__1703c_Debug D$:/ClionPro
 #############################################
 # Link the executable 1703c.exe
 
-build 1703c.exe: CXX_EXECUTABLE_LINKER__1703c_Debug CMakeFiles/1703c.dir/1703c.cpp.obj CMakeFiles/1703c.dir/1692c.cpp.obj CMakeFiles/1703c.dir/1744c.cpp.obj
+build 1703c.exe: CXX_EXECUTABLE_LINKER__1703c_Debug CMakeFiles/1703c.dir/1703c.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1703c.dir
@@ -1489,18 +1177,6 @@ build CMakeFiles/1717b.dir/1717b.cpp.obj: CXX_COMPILER__1717b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1717b.dir
   OBJECT_FILE_DIR = CMakeFiles\1717b.dir
 
-build CMakeFiles/1717b.dir/1692c.cpp.obj: CXX_COMPILER__1717b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1717b
-  DEP_FILE = CMakeFiles\1717b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1717b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1717b.dir
-
-build CMakeFiles/1717b.dir/1744c.cpp.obj: CXX_COMPILER__1717b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1717b
-  DEP_FILE = CMakeFiles\1717b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1717b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1717b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1717b
@@ -1509,7 +1185,7 @@ build CMakeFiles/1717b.dir/1744c.cpp.obj: CXX_COMPILER__1717b_Debug D$:/ClionPro
 #############################################
 # Link the executable 1717b.exe
 
-build 1717b.exe: CXX_EXECUTABLE_LINKER__1717b_Debug CMakeFiles/1717b.dir/1717b.cpp.obj CMakeFiles/1717b.dir/1692c.cpp.obj CMakeFiles/1717b.dir/1744c.cpp.obj
+build 1717b.exe: CXX_EXECUTABLE_LINKER__1717b_Debug CMakeFiles/1717b.dir/1717b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1717b.dir
@@ -1534,18 +1210,6 @@ build CMakeFiles/1721b.dir/1721b.cpp.obj: CXX_COMPILER__1721b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1721b.dir
   OBJECT_FILE_DIR = CMakeFiles\1721b.dir
 
-build CMakeFiles/1721b.dir/1692c.cpp.obj: CXX_COMPILER__1721b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1721b
-  DEP_FILE = CMakeFiles\1721b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1721b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1721b.dir
-
-build CMakeFiles/1721b.dir/1744c.cpp.obj: CXX_COMPILER__1721b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1721b
-  DEP_FILE = CMakeFiles\1721b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1721b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1721b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1721b
@@ -1554,7 +1218,7 @@ build CMakeFiles/1721b.dir/1744c.cpp.obj: CXX_COMPILER__1721b_Debug D$:/ClionPro
 #############################################
 # Link the executable 1721b.exe
 
-build 1721b.exe: CXX_EXECUTABLE_LINKER__1721b_Debug CMakeFiles/1721b.dir/1721b.cpp.obj CMakeFiles/1721b.dir/1692c.cpp.obj CMakeFiles/1721b.dir/1744c.cpp.obj
+build 1721b.exe: CXX_EXECUTABLE_LINKER__1721b_Debug CMakeFiles/1721b.dir/1721b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1721b.dir
@@ -1579,18 +1243,6 @@ build CMakeFiles/1729c.dir/1729c.cpp.obj: CXX_COMPILER__1729c_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1729c.dir
   OBJECT_FILE_DIR = CMakeFiles\1729c.dir
 
-build CMakeFiles/1729c.dir/1692c.cpp.obj: CXX_COMPILER__1729c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1729c
-  DEP_FILE = CMakeFiles\1729c.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1729c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1729c.dir
-
-build CMakeFiles/1729c.dir/1744c.cpp.obj: CXX_COMPILER__1729c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1729c
-  DEP_FILE = CMakeFiles\1729c.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1729c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1729c.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1729c
@@ -1599,7 +1251,7 @@ build CMakeFiles/1729c.dir/1744c.cpp.obj: CXX_COMPILER__1729c_Debug D$:/ClionPro
 #############################################
 # Link the executable 1729c.exe
 
-build 1729c.exe: CXX_EXECUTABLE_LINKER__1729c_Debug CMakeFiles/1729c.dir/1729c.cpp.obj CMakeFiles/1729c.dir/1692c.cpp.obj CMakeFiles/1729c.dir/1744c.cpp.obj
+build 1729c.exe: CXX_EXECUTABLE_LINKER__1729c_Debug CMakeFiles/1729c.dir/1729c.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1729c.dir
@@ -1624,18 +1276,6 @@ build CMakeFiles/1734b.dir/1734b.cpp.obj: CXX_COMPILER__1734b_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1734b.dir
   OBJECT_FILE_DIR = CMakeFiles\1734b.dir
 
-build CMakeFiles/1734b.dir/1692c.cpp.obj: CXX_COMPILER__1734b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1734b
-  DEP_FILE = CMakeFiles\1734b.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1734b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1734b.dir
-
-build CMakeFiles/1734b.dir/1744c.cpp.obj: CXX_COMPILER__1734b_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_1734b
-  DEP_FILE = CMakeFiles\1734b.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1734b.dir
-  OBJECT_FILE_DIR = CMakeFiles\1734b.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1734b
@@ -1644,7 +1284,7 @@ build CMakeFiles/1734b.dir/1744c.cpp.obj: CXX_COMPILER__1734b_Debug D$:/ClionPro
 #############################################
 # Link the executable 1734b.exe
 
-build 1734b.exe: CXX_EXECUTABLE_LINKER__1734b_Debug CMakeFiles/1734b.dir/1734b.cpp.obj CMakeFiles/1734b.dir/1692c.cpp.obj CMakeFiles/1734b.dir/1744c.cpp.obj
+build 1734b.exe: CXX_EXECUTABLE_LINKER__1734b_Debug CMakeFiles/1734b.dir/1734b.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1734b.dir
@@ -1669,12 +1309,6 @@ build CMakeFiles/1744c.dir/1744c.cpp.obj: CXX_COMPILER__1744c_Debug D$:/ClionPro
   OBJECT_DIR = CMakeFiles\1744c.dir
   OBJECT_FILE_DIR = CMakeFiles\1744c.dir
 
-build CMakeFiles/1744c.dir/1692c.cpp.obj: CXX_COMPILER__1744c_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_1744c
-  DEP_FILE = CMakeFiles\1744c.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\1744c.dir
-  OBJECT_FILE_DIR = CMakeFiles\1744c.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target 1744c
@@ -1683,7 +1317,7 @@ build CMakeFiles/1744c.dir/1692c.cpp.obj: CXX_COMPILER__1744c_Debug D$:/ClionPro
 #############################################
 # Link the executable 1744c.exe
 
-build 1744c.exe: CXX_EXECUTABLE_LINKER__1744c_Debug CMakeFiles/1744c.dir/1744c.cpp.obj CMakeFiles/1744c.dir/1692c.cpp.obj
+build 1744c.exe: CXX_EXECUTABLE_LINKER__1744c_Debug CMakeFiles/1744c.dir/1744c.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\1744c.dir
@@ -1692,6 +1326,39 @@ build 1744c.exe: CXX_EXECUTABLE_LINKER__1744c_Debug CMakeFiles/1744c.dir/1744c.c
   TARGET_FILE = 1744c.exe
   TARGET_IMPLIB = lib1744c.dll.a
   TARGET_PDB = 1744c.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target 1744d
+
+
+#############################################
+# Order-only phony target for 1744d
+
+build cmake_object_order_depends_target_1744d: phony || CMakeFiles/1744d.dir
+
+build CMakeFiles/1744d.dir/1744d.cpp.obj: CXX_COMPILER__1744d_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744d.cpp || cmake_object_order_depends_target_1744d
+  DEP_FILE = CMakeFiles\1744d.dir\1744d.cpp.obj.d
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles\1744d.dir
+  OBJECT_FILE_DIR = CMakeFiles\1744d.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target 1744d
+
+
+#############################################
+# Link the executable 1744d.exe
+
+build 1744d.exe: CXX_EXECUTABLE_LINKER__1744d_Debug CMakeFiles/1744d.dir/1744d.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\1744d.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = 1744d.exe
+  TARGET_IMPLIB = lib1744d.dll.a
+  TARGET_PDB = 1744d.exe.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target CMakeCXXCompilerId
@@ -1708,18 +1375,6 @@ build CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXX
   OBJECT_DIR = CMakeFiles\CMakeCXXCompilerId.dir
   OBJECT_FILE_DIR = CMakeFiles\CMakeCXXCompilerId.dir\CMakeFiles\3.23.2\CompilerIdCXX
 
-build CMakeFiles/CMakeCXXCompilerId.dir/1692c.cpp.obj: CXX_COMPILER__CMakeCXXCompilerId_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles\CMakeCXXCompilerId.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeCXXCompilerId.dir
-
-build CMakeFiles/CMakeCXXCompilerId.dir/1744c.cpp.obj: CXX_COMPILER__CMakeCXXCompilerId_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_CMakeCXXCompilerId
-  DEP_FILE = CMakeFiles\CMakeCXXCompilerId.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\CMakeCXXCompilerId.dir
-  OBJECT_FILE_DIR = CMakeFiles\CMakeCXXCompilerId.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CMakeCXXCompilerId
@@ -1728,7 +1383,7 @@ build CMakeFiles/CMakeCXXCompilerId.dir/1744c.cpp.obj: CXX_COMPILER__CMakeCXXCom
 #############################################
 # Link the executable CMakeCXXCompilerId.exe
 
-build CMakeCXXCompilerId.exe: CXX_EXECUTABLE_LINKER__CMakeCXXCompilerId_Debug CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj CMakeFiles/CMakeCXXCompilerId.dir/1692c.cpp.obj CMakeFiles/CMakeCXXCompilerId.dir/1744c.cpp.obj
+build CMakeCXXCompilerId.exe: CXX_EXECUTABLE_LINKER__CMakeCXXCompilerId_Debug CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/3.23.2/CompilerIdCXX/CMakeCXXCompilerId.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CMakeCXXCompilerId.dir
@@ -1753,18 +1408,6 @@ build CMakeFiles/hw-05-01.dir/hw-05-01.cpp.obj: CXX_COMPILER__hw-05-01_Debug D$:
   OBJECT_DIR = CMakeFiles\hw-05-01.dir
   OBJECT_FILE_DIR = CMakeFiles\hw-05-01.dir
 
-build CMakeFiles/hw-05-01.dir/1692c.cpp.obj: CXX_COMPILER__hw-05-01_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_hw-05-01
-  DEP_FILE = CMakeFiles\hw-05-01.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\hw-05-01.dir
-  OBJECT_FILE_DIR = CMakeFiles\hw-05-01.dir
-
-build CMakeFiles/hw-05-01.dir/1744c.cpp.obj: CXX_COMPILER__hw-05-01_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_hw-05-01
-  DEP_FILE = CMakeFiles\hw-05-01.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\hw-05-01.dir
-  OBJECT_FILE_DIR = CMakeFiles\hw-05-01.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hw-05-01
@@ -1773,7 +1416,7 @@ build CMakeFiles/hw-05-01.dir/1744c.cpp.obj: CXX_COMPILER__hw-05-01_Debug D$:/Cl
 #############################################
 # Link the executable hw-05-01.exe
 
-build hw-05-01.exe: CXX_EXECUTABLE_LINKER__hw-05-01_Debug CMakeFiles/hw-05-01.dir/hw-05-01.cpp.obj CMakeFiles/hw-05-01.dir/1692c.cpp.obj CMakeFiles/hw-05-01.dir/1744c.cpp.obj
+build hw-05-01.exe: CXX_EXECUTABLE_LINKER__hw-05-01_Debug CMakeFiles/hw-05-01.dir/hw-05-01.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\hw-05-01.dir
@@ -1798,18 +1441,6 @@ build CMakeFiles/hw-05-02.dir/hw-05-02.cpp.obj: CXX_COMPILER__hw-05-02_Debug D$:
   OBJECT_DIR = CMakeFiles\hw-05-02.dir
   OBJECT_FILE_DIR = CMakeFiles\hw-05-02.dir
 
-build CMakeFiles/hw-05-02.dir/1692c.cpp.obj: CXX_COMPILER__hw-05-02_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_hw-05-02
-  DEP_FILE = CMakeFiles\hw-05-02.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\hw-05-02.dir
-  OBJECT_FILE_DIR = CMakeFiles\hw-05-02.dir
-
-build CMakeFiles/hw-05-02.dir/1744c.cpp.obj: CXX_COMPILER__hw-05-02_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_hw-05-02
-  DEP_FILE = CMakeFiles\hw-05-02.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\hw-05-02.dir
-  OBJECT_FILE_DIR = CMakeFiles\hw-05-02.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hw-05-02
@@ -1818,7 +1449,7 @@ build CMakeFiles/hw-05-02.dir/1744c.cpp.obj: CXX_COMPILER__hw-05-02_Debug D$:/Cl
 #############################################
 # Link the executable hw-05-02.exe
 
-build hw-05-02.exe: CXX_EXECUTABLE_LINKER__hw-05-02_Debug CMakeFiles/hw-05-02.dir/hw-05-02.cpp.obj CMakeFiles/hw-05-02.dir/1692c.cpp.obj CMakeFiles/hw-05-02.dir/1744c.cpp.obj
+build hw-05-02.exe: CXX_EXECUTABLE_LINKER__hw-05-02_Debug CMakeFiles/hw-05-02.dir/hw-05-02.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\hw-05-02.dir
@@ -1843,18 +1474,6 @@ build CMakeFiles/hw-05-03.dir/hw-05-03.cpp.obj: CXX_COMPILER__hw-05-03_Debug D$:
   OBJECT_DIR = CMakeFiles\hw-05-03.dir
   OBJECT_FILE_DIR = CMakeFiles\hw-05-03.dir
 
-build CMakeFiles/hw-05-03.dir/1692c.cpp.obj: CXX_COMPILER__hw-05-03_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1692c.cpp || cmake_object_order_depends_target_hw-05-03
-  DEP_FILE = CMakeFiles\hw-05-03.dir\1692c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\hw-05-03.dir
-  OBJECT_FILE_DIR = CMakeFiles\hw-05-03.dir
-
-build CMakeFiles/hw-05-03.dir/1744c.cpp.obj: CXX_COMPILER__hw-05-03_Debug D$:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/1744c.cpp || cmake_object_order_depends_target_hw-05-03
-  DEP_FILE = CMakeFiles\hw-05-03.dir\1744c.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\hw-05-03.dir
-  OBJECT_FILE_DIR = CMakeFiles\hw-05-03.dir
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target hw-05-03
@@ -1863,7 +1482,7 @@ build CMakeFiles/hw-05-03.dir/1744c.cpp.obj: CXX_COMPILER__hw-05-03_Debug D$:/Cl
 #############################################
 # Link the executable hw-05-03.exe
 
-build hw-05-03.exe: CXX_EXECUTABLE_LINKER__hw-05-03_Debug CMakeFiles/hw-05-03.dir/hw-05-03.cpp.obj CMakeFiles/hw-05-03.dir/1692c.cpp.obj CMakeFiles/hw-05-03.dir/1744c.cpp.obj
+build hw-05-03.exe: CXX_EXECUTABLE_LINKER__hw-05-03_Debug CMakeFiles/hw-05-03.dir/hw-05-03.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\hw-05-03.dir
@@ -1953,7 +1572,11 @@ build 1670b: phony 1670b.exe
 
 build 1671a: phony 1671a.exe
 
+build 1675c: phony 1675c.exe
+
 build 1680b: phony 1680b.exe
+
+build 1690d: phony 1690d.exe
 
 build 1692c: phony 1692c.exe
 
@@ -1973,6 +1596,8 @@ build 1734b: phony 1734b.exe
 
 build 1744c: phony 1744c.exe
 
+build 1744d: phony 1744d.exe
+
 build CMakeCXXCompilerId: phony CMakeCXXCompilerId.exe
 
 build hw-05-01: phony hw-05-01.exe
@@ -1989,7 +1614,7 @@ build hw-05-03: phony hw-05-03.exe
 #############################################
 # Folder: D:/ClionProject/mukhamedov_m_i/mukhamedov_m_i/cmake-build-debug
 
-build all: phony 0004a.exe 0082a.exe 0110a.exe 0136a.exe 0136b.exe 0217a.exe 0263a.exe 0276a.exe 0318a.exe 0478a.exe 0617a.exe 0951a.exe 0977a.exe 0978a.exe 1100c.exe 1327a.exe 1330a.exe 1352a.exe 1404a.exe 1501a.exe 1512c.exe 1559a.exe 1585a.exe 1626b.exe 1649a.exe 1670b.exe 1671a.exe 1680b.exe 1692c.exe 1692f.exe 1701a.exe 1703c.exe 1717b.exe 1721b.exe 1729c.exe 1734b.exe 1744c.exe CMakeCXXCompilerId.exe hw-05-01.exe hw-05-02.exe hw-05-03.exe
+build all: phony 0004a.exe 0082a.exe 0110a.exe 0136a.exe 0136b.exe 0217a.exe 0263a.exe 0276a.exe 0318a.exe 0478a.exe 0617a.exe 0951a.exe 0977a.exe 0978a.exe 1100c.exe 1327a.exe 1330a.exe 1352a.exe 1404a.exe 1501a.exe 1512c.exe 1559a.exe 1585a.exe 1626b.exe 1649a.exe 1670b.exe 1671a.exe 1675c.exe 1680b.exe 1690d.exe 1692c.exe 1692f.exe 1701a.exe 1703c.exe 1717b.exe 1721b.exe 1729c.exe 1734b.exe 1744c.exe 1744d.exe CMakeCXXCompilerId.exe hw-05-01.exe hw-05-02.exe hw-05-03.exe
 
 # =============================================================================
 # Built-in targets

@@ -16,6 +16,7 @@
       <config projectName="misis-proga" targetName="1501a" />
       <config projectName="misis-proga" targetName="1721b" />
       <config projectName="misis-proga" targetName="1692f" />
+      <config projectName="misis-proga" targetName="1690d" />
       <config projectName="misis-proga" targetName="1670b" />
       <config projectName="misis-proga" targetName="hw-05-03" />
       <config projectName="misis-proga" targetName="1680b" />
@@ -27,11 +28,13 @@
       <config projectName="misis-proga" targetName="0136a" />
       <config projectName="misis-proga" targetName="0136b" />
       <config projectName="misis-proga" targetName="1649a" />
+      <config projectName="misis-proga" targetName="1675c" />
       <config projectName="misis-proga" targetName="1671a" />
       <config projectName="misis-proga" targetName="0978a" />
       <config projectName="misis-proga" targetName="1330a" />
       <config projectName="misis-proga" targetName="1352a" />
       <config projectName="misis-proga" targetName="1734b" />
+      <config projectName="misis-proga" targetName="1744d" />
       <config projectName="misis-proga" targetName="1512c" />
       <config projectName="misis-proga" targetName="1744c" />
       <config projectName="misis-proga" targetName="0318a" />
@@ -60,7 +63,60 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e152702b-131c-4af1-bf87-b1066e2d7117" name="Changes" comment="_" />
+    <list default="true" id="e152702b-131c-4af1-bf87-b1066e2d7117" name="Changes" comment="_">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/1692c.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-c60140a0ff70722aa12a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/index-2022-10-18T12-19-46-0381.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0004a-Debug-a905b5d83c00842f85a0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0082a-Debug-99a3a038fbe320a083b3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0110a-Debug-4b7a1975cab4a4646927.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0136a-Debug-06f5c8e3293fe7348270.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0136b-Debug-997fdeb98fda1908ca87.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0217a-Debug-f5b1d678a9b1bc22913d.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0263a-Debug-55185c8c828306aee1a5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0276a-Debug-fb5e1545f619cf1fddc2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0318a-Debug-9707e89522e5da510cf1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0478a-Debug-4dc11c10c288926fc9cb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0617a-Debug-b1bf50a1e8a4a306eda7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0951a-Debug-48f3dbf6ce12ddca0761.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0977a-Debug-7acd38ba40630c564b53.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-0978a-Debug-253a7c81759824bf7dc1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1100c-Debug-aadccec6382905156e25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1327a-Debug-9ada43aed2776e0262cf.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1330a-Debug-0aa9c78acf935585eb7e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1352a-Debug-29b5918e8e94a4d03528.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1404a-Debug-fc4c5b2b3ea99538b752.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1501a-Debug-49bccd10ee1346d4fdf0.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1512c-Debug-f479cd5cf81a19e60ee8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1559a-Debug-340564386c7e49f6c955.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1585a-Debug-31ea2ece21b563f65e74.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1626b-Debug-0ddd24ac49ecf652b5dd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1649a-Debug-5be83b7b323c1e8cfbe3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1670b-Debug-50d4eb08e0c71988baea.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1671a-Debug-45dd3f8531ca0bc427b2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1680b-Debug-893bb0ab9f1e4240b2e1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1692c-Debug-f053908a4d051c631c22.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1692f-Debug-96fa1751c43c17788931.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1701a-Debug-1aef06e74572f5d58984.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1703c-Debug-b6fd9cb30fa95227bc25.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1717b-Debug-7b5c5ac7e034a6583528.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1721b-Debug-3a9cfe1e007a94b0f72a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1729c-Debug-92d9b3931f6f85c595e9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1734b-Debug-833a93c5b1f737291294.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-1744c-Debug-892f9c7bb06006aa2573.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-CMakeCXXCompilerId-Debug-0120b3d366c466fdbe49.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-hw-05-01-Debug-0bef112f219b13e15470.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-hw-05-02-Debug-0f6ae51332593911558c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.cmake/api/v1/reply/target-hw-05-03-Debug-63f8eb2fc9c49a3d299e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/mukhamedov_m_i/cmake-build-debug/build.ninja" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,7 +171,12 @@
       <recent name="D:\ClionProject\mukhamedov_m_i\mukhamedov_m_i" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.1744c">
+  <component name="RunManager" selected="CMake Application.1692c">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="0004a" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="0004a" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="0004a">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -251,7 +312,17 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="1675c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1675c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1675c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="1680b" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1680b" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1680b">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1690d" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1690d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1690d">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -297,6 +368,11 @@
       </method>
     </configuration>
     <configuration name="1744c" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1744c" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1744c">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1744d" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="misis-proga" TARGET_NAME="1744d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="misis-proga" RUN_TARGET_NAME="1744d">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -349,7 +425,9 @@
       <item itemvalue="CMake Application.1649a" />
       <item itemvalue="CMake Application.1670b" />
       <item itemvalue="CMake Application.1671a" />
+      <item itemvalue="CMake Application.1675c" />
       <item itemvalue="CMake Application.1680b" />
+      <item itemvalue="CMake Application.1690d" />
       <item itemvalue="CMake Application.1692c" />
       <item itemvalue="CMake Application.1692f" />
       <item itemvalue="CMake Application.1701a" />
@@ -359,6 +437,7 @@
       <item itemvalue="CMake Application.1729c" />
       <item itemvalue="CMake Application.1734b" />
       <item itemvalue="CMake Application.1744c" />
+      <item itemvalue="CMake Application.1744d" />
       <item itemvalue="CMake Application.CMakeCXXCompilerId" />
       <item itemvalue="CMake Application.hw-05-01" />
       <item itemvalue="CMake Application.hw-05-02" />
@@ -376,7 +455,9 @@
       <workItem from="1665588766408" duration="476000" />
       <workItem from="1665590667349" duration="3745000" />
       <workItem from="1666092926812" duration="3398000" />
-      <workItem from="1666096642742" duration="659000" />
+      <workItem from="1666096642742" duration="1567000" />
+      <workItem from="1666699195668" duration="2639000" />
+      <workItem from="1667203700026" duration="2799000" />
     </task>
     <task id="LOCAL-00001" summary="_">
       <created>1665589042815</created>
@@ -420,7 +501,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666097118765</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="_">
+      <created>1666097504930</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666097504930</updated>
+    </task>
+    <task id="LOCAL-00008" summary="_">
+      <created>1666098223733</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666098223733</updated>
+    </task>
+    <task id="LOCAL-00009" summary="_">
+      <created>1667203746483</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667203746483</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
