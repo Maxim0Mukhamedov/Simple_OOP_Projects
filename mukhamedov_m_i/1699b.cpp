@@ -2,10 +2,11 @@
 
 int main()
 {
-    int t;
+    int t = 0;
     std::cin>>t;
     for (int k = 0; k < t; k += 1){
-        int n,m;
+        int n = 0;
+        int m = 0;
         std::cin >> n >> m;
         for(int i=1;i<=n;i++){
             for(int j=1;j<=m;j++){
