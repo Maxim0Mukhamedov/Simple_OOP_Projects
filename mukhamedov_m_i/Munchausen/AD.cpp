@@ -3,31 +3,35 @@
 #include "iostream"
 #include "string"
 #include "vector"
+#include "cmath"
 
 //Конфигурационные переменные
-int k = 0;
-double dt = 0.1;
-double g = 9.8;
+int k = 0; // Кол-во CSV файлов с результатом
+double dt = 0.1;// Частота дискретизации
+double g = 9.8; // Ускорение свободного падения
 double distH = 10;
 double distV = 0;
+// Начальные координаты вектора скорости защиты
 double x = 4;
 double y = 7;
+// Начальные координаты вектора скорости атаки
 double x1 = -20;
-double y1 = 5;
-int type = 1;
-double delta = 0.1;
-double t = 0.1;
+double yy = 5.0;
+int type = 1; //Тип теста
+double delta = 0.1; //Шаг поиска x,y
+double t = 0.1;// Задержка
+// Ограничения на скорости ядер
 double v_min = -10;
 double v_max = 10;
 std::vector<std::string> research;
-//Реализация совокупности сил, действущих на ядро
+// Реализация совокупности сил, действущих на ядро
 struct State {
     Rdec2D a;
     Rdec2D v;
     Rdec2D r;
 };
 
-//Реализация считывания конфигурационных настроек
+// Реализация считывания конфигурационных настроек
 struct conf {
     std::string config;
     double lit;
@@ -35,8 +39,8 @@ struct conf {
 
 std::ifstream &operator>>(std::ifstream &fin, conf &s) {
     fin >> s.config;
-    std::string num = "";
-    bool lite = false;
+    std::string num = ""; // Строка в которой будет сохранён литерал настройки
+    bool lite = false; // false => название параметра true => литерал
     for (int i = 1; i < s.config.size(); i += 1) {
         if (s.config[i] == '/') {
             break;
@@ -52,7 +56,7 @@ std::ifstream &operator>>(std::ifstream &fin, conf &s) {
 
 void read_conf() {
     std::ifstream fin("config.txt");
-
+    // Считывание всех настроек из конфигурационного файла
     conf settings;
     fin >> settings;
     dt = settings.lit;
@@ -69,7 +73,7 @@ void read_conf() {
     fin >> settings;
     x1 = settings.lit;
     fin >> settings;
-    y1 = settings.lit;
+    yy = settings.lit;
     fin >> settings;
     type = settings.lit;
     fin >> settings;
@@ -81,50 +85,49 @@ void read_conf() {
     t = distH / 331;
 }
 
-//Вычислительная часть программы
-void cors(const double &x, const double &y) {
-    std::vector<std::string> ans; //Данных о координатах радиус векторов
+// Вычислительная часть программы
+void cors() {
+    std::vector<std::string> ans; // Вектор данных о координатах радиус векторов
     ans.push_back("A,B,C,D");
     ans.push_back("0,0," + std::to_string(distH) + "," + std::to_string(distV));
 
-    State cor{{0, -g}, //cor - сторона защиты
+    State cor{{0, -g}, // cor - сторона защиты
               {x, y},
               {0, 0}};
-    cor.r = cor.r + cor.v * dt;
-    cor.v = cor.v + cor.a * dt;
     State cor2{{0,     -g}, // cor2 - сторона атаки
-               {x1,    y1},
+               {x1,    yy},
                {distH, distV}};
     double tt = t;
-    while (tt > 0) { //учёт задержки
-        cor2.r = cor2.r + cor2.v * dt;
-        cor2.v = cor2.v + cor2.a * dt;
+    while (tt > 0) { // Учёт задержки
+        cor2.r = cor2.r + cor2.v * tt;
+        cor2.v = cor2.v + cor2.a * tt;
         tt -= dt;
         ans.push_back("0,0," + std::to_string(cor2.r.x) + "," + std::to_string(cor2.r.y));
     }
 
     bool hit = false; // hit = false => ядра не попали друг в друга
-    while (cor.r.y > 0 && cor2.r.y > 0) {
-        cor.r = cor.r + cor.v * dt;
+
+    while (cor.r.y >= 0 && cor2.r.y >= 0) {
+        cor.r = cor.r + cor.v * dt; // Вычисление координат радиус векторов
         cor.v = cor.v + cor.a * dt;
         cor2.r = cor2.r + cor2.v * dt;
         cor2.v = cor2.v + cor2.a * dt;
-        if (cor.r.y > 0 && cor2.r.y > 0) { // сохраняются только реальные координаты ядер
+        if (cor.r.y >= 0 && cor2.r.y >= 0) { // Сохраняются только реальные координаты ядер
             ans.push_back(
                     std::to_string(cor.r.x) + "," + std::to_string(cor.r.y) + "," + std::to_string(cor2.r.x) + "," +
                     std::to_string(cor2.r.y));
         }
-        if (cor.r == cor2.r) { //попадание ядер друг в друга
+        if (Norm(cor.r - cor2.r) < delta) { // Попадание ядер друг в друга
             hit = true;
             ans.push_back("hit");
-        } else if (cor.r.y < 0 || cor2.r.y < 0) {
+        } else if (cor.r.y < 0 || cor2.r.y < 0) {// Падение одного из ядер
             ans.push_back("finish");
         }
     }
-    if (type == 0) { // ответ на запрос в зависимости от типа задачи
+    if (type == 0) { // Ответ на запрос в зависимости от типа задачи
         std::string s = "file" + std::to_string(k) + ".csv";
         s = ".//Try_hit_settings//" + s;
-        std::ofstream fout(s);
+        std::ofstream fout(s); // Создание файла в формате file(k).csv, где k - номер решения
         k++;
         for (auto i: ans) {
             if (i == "hit" || i == "finish") { break; }
@@ -139,7 +142,7 @@ void cors(const double &x, const double &y) {
             if (i == "hit" || i == "finish") { break; }
             fout << i << std::endl;
         }
-        research.push_back(std::to_string(x) + "," + std::to_string(y));
+        research.push_back(std::to_string(x) + "," + std::to_string(y)); // Сохранение в отчет подобранных координат.
     }
 }
 
@@ -148,18 +151,20 @@ int main() {
     read_conf();
 
     if (type == 1) {
-        std::ofstream fout_research(".//Find_hit_settings//report.txt");
-        for (double x = v_min; x < v_max; x += delta) {
-            for (double y = 0; y < v_max; y += delta) {
-                cors(x, y);
+        std::ofstream fout_research(
+                ".//Find_hit_settings//report.txt"); // Создание файла с отчетом, в нем хранятся ответы и кол-во решения
+        for (x = v_min; x <= v_max; x += delta) {
+            for (y = 0; y <= v_max; y += delta) {
+                cors();
             }
         }
-        fout_research << k << std::endl; //Для корректной обработки полученных CSV файлов требуется знать их кол-во
-        for (auto j : research) {
+        fout_research << k << std::endl; // Для корректной обработки полученных CSV файлов требуется знать их кол-во
+        for (auto j: research) {
             fout_research << j << std::endl;
         }
     } else {
-        cors(x, y);
+        std::cout << x << ' ' << y;
+        cors();
         std::ofstream fout_research(".//Try_hit_settings//report.txt");
         fout_research << k << std::endl;
         fout_research << std::to_string(x) + "," + std::to_string(y);
