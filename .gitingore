@@ -4,34 +4,48 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 
-# Compiled object files
+# Compiled files
 *.o
 *.obj
-
-# Compiled executables
 *.exe
-*.out
+*.dll
+*.so
+*.dylib
 
-# Libraries
-*.a
-*.lib
-
-# Generated files
-Debug/
-Release/
-bin/
-build/
-obj/
-GeneratedFiles/
+# Debugging files
+*.pdb
+*.dSYM/
 
 # IDE files
 .vscode/
 .idea/
-*.sln
-*.vcxproj
-*.vcxproj.filters
 
-# Miscellaneous
-Thumbs.db
-*.DS_Store
+# Build directory
+build/
+
+# Other files
 *.log
+*.swp
+*.swo
+*.DS_Store
+
+# CMake build directory
+cmake-build-debug/
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Debugging files
+*.pdb
+*.dSYM/
+
+# Other files
+*.log
+*.swp
+*.swo
+*.DS_Store
