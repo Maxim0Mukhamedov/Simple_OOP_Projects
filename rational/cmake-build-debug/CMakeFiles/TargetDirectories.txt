@@ -1,6 +1,0 @@
-/home/maxim/CLionProjects/Rational/cmake-build-debug/CMakeFiles/test.dir
-/home/maxim/CLionProjects/Rational/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/maxim/CLionProjects/Rational/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/maxim/CLionProjects/Rational/cmake-build-debug/rational/CMakeFiles/rat.dir
-/home/maxim/CLionProjects/Rational/cmake-build-debug/rational/CMakeFiles/edit_cache.dir
-/home/maxim/CLionProjects/Rational/cmake-build-debug/rational/CMakeFiles/rebuild_cache.dir
