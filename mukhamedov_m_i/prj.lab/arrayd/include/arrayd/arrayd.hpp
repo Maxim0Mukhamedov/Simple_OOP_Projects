@@ -19,8 +19,9 @@ public:
     //Взятие размера
     ptrdiff_t size() const;
     //Изменение размера
-    void resize(int size);
-    void push_back(double new_elem);
+    void resize(const int& size);
+    void insert(const int& i, const double& elem);
+    void remove(const int& i);
     //Ввод/вывод
     std::istream& ReadFrom(std::istream& istrm);;
     std::ostream& WriteTo(std::ostream& ostrm);;
@@ -31,3 +32,4 @@ private:
 
 std::ostream& operator<<(std::ostream& ostrm, ArrayD& array);
 std::istream& operator>>(std::istream& istrm, ArrayD& array);
+//insert remove
