@@ -17,7 +17,7 @@ public:
     //Оператор итерирования
     double& operator[](int index) const;
     //Взятие размера
-    ptrdiff_t size() const;
+    ptrdiff_t ssize() const;
     //Изменение размера
     void resize(const int& size);
     void insert(const int& i, const double& elem);

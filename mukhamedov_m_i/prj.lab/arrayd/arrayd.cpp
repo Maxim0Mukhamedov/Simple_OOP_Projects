@@ -21,7 +21,7 @@ ArrayD::ArrayD(std::initializer_list<double> list) : ssize_(list.size())
 
 ArrayD &ArrayD::operator=(const ArrayD &other) {
     delete[] data;
-    ssize_ = other.size();
+    ssize_ = other.ssize();
     data = new double[ssize_];
     for(int i = 0; i < ssize_; ++i)
         data[i] = other.data[i];
@@ -37,7 +37,7 @@ double &ArrayD::operator[](int index) const {
     return data[index];
 }
 
-ptrdiff_t ArrayD::size() const { return ssize_; }
+ptrdiff_t ArrayD::ssize() const { return ssize_; }
 
 void ArrayD::resize(const int& new_size){
     if (new_size <= 0) { throw std::invalid_argument("invalid size");}

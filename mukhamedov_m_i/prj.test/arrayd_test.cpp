@@ -3,7 +3,7 @@
 #include "doctest/doctest.h"
 TEST_CASE("testing the DynamicArrays functions") {
     CHECK_NOTHROW(ArrayD{1, 2});
-    CHECK_NOTHROW(ArrayD{1, 2}.size());
+    CHECK_NOTHROW(ArrayD{1, 2}.ssize());
     CHECK_NOTHROW(ArrayD{1, 2});
     ArrayD a{1,2};
     ArrayD b;
