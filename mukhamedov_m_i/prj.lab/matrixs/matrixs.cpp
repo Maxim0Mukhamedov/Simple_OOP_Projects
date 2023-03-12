@@ -1,5 +1,6 @@
 #include "matrixs/matrixs.hpp"
 #include <cstddef>
+#include <stdexcept>
 #include "iosfwd"
 #include "utility"
 
@@ -33,6 +34,7 @@ MatrixS& MatrixS::operator=(const MatrixS &other){
 }
 
 double *MatrixS::operator[](int index) const {
+    if (0 <= index <= sshape_.first) throw std::invalid_argument("invalid index");
     return data[index];
 }
 
