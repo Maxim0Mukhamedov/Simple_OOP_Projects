@@ -48,6 +48,7 @@ void ArrayD::resize(const int& new_size){
     for (int i = 0; i < min_size; ++i) {
         data[i] = old[i];
     }
+    delete[] old;
 }
 
 void ArrayD::insert(const int& i, const double& elem) {
@@ -62,6 +63,7 @@ void ArrayD::insert(const int& i, const double& elem) {
     for (int j = i + 1; j < ssize_; ++j) {
         data[j] = old[j - 1];
     }
+    delete[] old;
 }
 void ArrayD::remove(const int& i) {
     std::rotate(data + i, data + i + 1, data + ssize_);

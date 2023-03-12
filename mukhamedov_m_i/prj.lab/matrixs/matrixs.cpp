@@ -20,7 +20,9 @@ MatrixS::MatrixS(const MatrixS &other) : sshape_(other.shape()) {
     }
 }
 
-MatrixS &MatrixS::operator=(const MatrixS &other) {
+MatrixS& MatrixS::operator=(const MatrixS &other){
+    delete[] data;
+    sshape_ = other.shape();
     data = new double* [sshape_.first];
     for (int i  = 0; i < sshape_.first; i++){
         data[i] = new double[sshape_.second];

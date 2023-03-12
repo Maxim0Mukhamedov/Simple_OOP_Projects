@@ -7,12 +7,22 @@
 #include "doctest/doctest.h"
 
 TEST_CASE("Test of MatrixS") {
-    MatrixS a(2,2);
-    std::pair<int,int> nm = a.shape();
+    CHECK_NOTHROW(MatrixS(1,4));
+    MatrixS a(2,4);
+    MatrixS b;
+    b = a;
+    std::pair<int,int> nm = b.shape();
+    b[0][0] = 1;
+    for (int i = 0; i < nm.first; i++) {
+        for (int j = 0; j < nm.second; j++) {
+            std::cout << b[i][j] << ' ';
+        }
+        std::cout << '\n';
+    }
     for (int i = 0; i < nm.first; i++) {
         for (int j = 0; j < nm.second; j++) {
             std::cout << a[i][j] << ' ';
         }
-        std::cout <<'\n';
+        std::cout << '\n';
     }
 }

@@ -23,8 +23,8 @@ public:
     void insert(const int& i, const double& elem);
     void remove(const int& i);
     //Ввод/вывод
-    std::istream& ReadFrom(std::istream& istrm);;
-    std::ostream& WriteTo(std::ostream& ostrm);;
+    std::istream& ReadFrom(std::istream& istrm);
+    std::ostream& WriteTo(std::ostream& ostrm);
 private:
     double *data = nullptr;
     ptrdiff_t ssize_ = 0;
