@@ -27,7 +27,8 @@ public:
     std::ostream& WriteTo(std::ostream& ostrm);
 private:
     double *data = nullptr;
-    ptrdiff_t ssize_ = 0;
+    std::ptrdiff_t ssize_ = 0;
+    std::ptrdiff_t capacity_ = 0;
 };
 
 std::ostream& operator<<(std::ostream& ostrm, ArrayD& array);

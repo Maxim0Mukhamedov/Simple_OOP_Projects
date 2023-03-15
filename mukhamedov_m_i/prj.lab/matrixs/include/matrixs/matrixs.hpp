@@ -1,6 +1,5 @@
 #include <cstddef>
 #include "iosfwd"
-#include "utility"
 
 class MatrixS
 {
@@ -12,13 +11,17 @@ public:
     //Деструктор
     ~MatrixS() = default;
     //Оператор итерирования
-    double* operator[](int index) const;
+    const int& at(int index_row, int index_col) const;
+    int& at(int index_row, int index_col);
     //Взятие размера
-    std::pair<int,int> shape() const;
+    const int cols() const;
+    const int rows() const;
+    void resize(int rows, int cols);
     //Изменение размера
     //void resize(const int& size);
 private:
-    double** data = nullptr;
-    std::pair<int,int> sshape_{0,0};
+    int* data = nullptr;
+    int col = 0;
+    int row = 0;
 };
 

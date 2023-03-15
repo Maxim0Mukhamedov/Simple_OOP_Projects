@@ -6,7 +6,8 @@ ArrayD::ArrayD(int s) : ssize_(s) { data = new double[ssize_]; }
 
 ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_)
 {
-    data = new double[ssize_];
+    capacity_ = ssize_*2;
+    data = new double[capacity_];
     for(int i = 0; i < ssize_; ++i)
         data[i] = other.data[i];
 }

@@ -11,17 +11,19 @@ TEST_CASE("Test of MatrixS") {
     MatrixS a(2,4);
     MatrixS b;
     b = a;
-    std::pair<int,int> nm = b.shape();
-    b[0][0] = 1;
+    std::pair<int,int> nm = {b.rows(),b.cols()};
     for (int i = 0; i < nm.first; i++) {
         for (int j = 0; j < nm.second; j++) {
-            std::cout << b[i][j] << ' ';
+            std::cout << a.at(i,j) << ' ';
         }
         std::cout << '\n';
     }
+    b.at(0,0) = 1;
+    b.resize(3,5);
+    nm = {b.rows(),b.cols()};
     for (int i = 0; i < nm.first; i++) {
         for (int j = 0; j < nm.second; j++) {
-            std::cout << a[i][j] << ' ';
+            std::cout << b.at(i,j) << ' ';
         }
         std::cout << '\n';
     }
