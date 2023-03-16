@@ -26,11 +26,15 @@ Rational::Rational(const int32_t p, const int32_t q) {
         num_ = -num_;
     }
 }
+Rational::Rational(const int32_t p) noexcept {
+    denum_ = 1;
+    num_ = p;
+}
 //Input/output
 std::ostream& operator<<(std::ostream& ostrm, const Rational& rhs){
     return rhs.writeTo(ostrm);
 }
-std::ostream& Rational::writeTo(std::ostream& ostrm) const {
+std::ostream& Rational::writeTo(std::ostream& ostrm) const noexcept {
     ostrm << num_ << separator << denum_;
     return ostrm;
 }
@@ -45,7 +49,7 @@ std::istream& Rational::readFrom(std::istream& istrm) {
     istrm >> divide;
     istrm >> q;
     if (istrm.good() || !istrm.fail() && istrm.eof()) {
-        if (Rational::separator == divide) {
+        if (Rational::separator == divide && q >= 0) {
             istrm.clear();
             *this = Rational(p, q);
         } else {
@@ -58,26 +62,79 @@ std::istream& Rational::readFrom(std::istream& istrm) {
 Rational Rational::operator+(const Rational &rhs){
     return Rational(num_*rhs.denum_ + rhs.num_ * denum_,denum_ * rhs.denum_);
 }
+Rational Rational::operator+(const int32_t & rhs) {
+    return Rational(num_ + rhs * denum_,denum_);
+}
 Rational Rational::operator-(const Rational &rhs) {
     return Rational(num_*rhs.denum_ - rhs.num_ * denum_,denum_ * rhs.denum_);
+}
+Rational Rational::operator-(const int32_t & rhs) {
+    return Rational(num_ - rhs * denum_,denum_);
 }
 Rational Rational::operator/(const Rational &rhs) {
     return Rational(num_ * rhs.denum_,denum_*rhs.num_);
 }
+Rational Rational::operator/(const int32_t & rhs) {
+    return Rational(num_,denum_ * rhs);
+}
 Rational Rational::operator*(const Rational &rhs) {
     return Rational(num_*rhs.num_,denum_ * rhs.denum_);
 }
-void operator+=(Rational& lhs, const Rational& rhs) {
+Rational Rational::operator*(const int32_t & rhs) {
+    return Rational(num_ * rhs,denum_);
+}
+
+void operator+=(Rational &lhs, const Rational &rhs) {
     lhs = lhs + rhs;
 }
-void operator-=(Rational& lhs, const Rational& rhs) {
+
+void operator-=(Rational &lhs, const Rational &rhs) {
     lhs = lhs - rhs;
 }
-void operator/=(Rational& lhs, const Rational& rhs) {
+
+void operator/=(Rational &lhs, const Rational &rhs) {
     lhs = lhs / rhs;
 }
-void operator*=(Rational& lhs, const Rational& rhs) {
+
+void operator*=(Rational &lhs, const Rational &rhs) {
     lhs = lhs * rhs;
+}
+
+void operator+=(Rational &lhs, const int32_t &rhs) {
+    lhs = lhs + rhs;
+}
+
+void operator-=(Rational &lhs, const int32_t &rhs) {
+    lhs = lhs - rhs;
+}
+
+void operator/=(Rational &lhs, const int32_t &rhs) {
+    lhs = lhs / rhs;
+}
+
+void operator*=(Rational &lhs, const int32_t &rhs) {
+    lhs = lhs * rhs;
+}
+
+Rational& operator++(Rational& lhs) {
+    lhs = lhs + 1;
+    return lhs;
+}
+
+Rational& operator--(Rational& lhs) {
+    lhs = lhs - 1;
+    return lhs;
+}
+Rational operator++(Rational& lhs,int) {
+    Rational old = lhs;
+    lhs += 1;
+    return old;
+}
+
+Rational operator--(Rational& lhs,int) {
+    Rational old = lhs;
+    lhs -= 1;
+    return old;
 }
 
 Rational Rational::operator-() {
@@ -85,12 +142,32 @@ Rational Rational::operator-() {
     return *this;
 }
 //Compare
-bool Rational::operator==(const Rational &rhs) const { return (num_ == rhs.num_) && (denum_ == rhs.denum_);}
+bool Rational::operator==(const Rational &rhs) const { return ((num_ == rhs.num_) && (denum_ == rhs.denum_));}
 bool Rational::operator!=(const Rational &rhs) const { return !operator==(rhs);}
 bool Rational::operator>(const Rational &rhs) const {return ((num_ * rhs.denum_ - rhs.num_ * denum_) > 0);}
 bool operator<(const Rational &lhs,const Rational &rhs) {return rhs.operator>(lhs);}
 bool operator<=(const Rational &lhs,const Rational &rhs) {return !lhs.operator>(rhs);}
 bool operator>=(const Rational &lhs,const Rational &rhs) {return !rhs.operator>(lhs);}
+bool operator==(const Rational &lhs,const int32_t &rhs) {
+    return lhs == Rational(rhs);
+}
+bool operator!=(const Rational &lhs,const int32_t &rhs) {
+    return lhs != Rational(rhs);
+}
+bool operator>(const Rational &lhs,const int32_t &rhs) {
+    return lhs > Rational(rhs);
+}
+bool operator<(const Rational &lhs,const int32_t &rhs) {
+    return lhs < Rational(rhs);
+}
+bool operator<=(const Rational &lhs,const int32_t &rhs) {
+    return lhs <= Rational(rhs);
+}
+bool operator>=(const Rational &lhs,const int32_t &rhs) {
+    return lhs >= Rational(rhs);
+}
+
+
 
 //
 // Created by maxim on 2/28/23.
