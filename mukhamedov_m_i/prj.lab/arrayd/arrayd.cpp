@@ -33,15 +33,20 @@ ArrayD::ArrayD(ArrayD &&other) : ssize_(other.ssize_), data(other.data) //Кон
     other.ssize_ = 0;
     other.data = nullptr;
 }
-double &ArrayD::operator[](int index) const {
-    if (index <= 0 || index >= ssize_) {throw std::invalid_argument("invalid index");}
+double &ArrayD::operator[](int index) {
+    if (index <= 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
+    return data[index];
+}
+
+const double& ArrayD::operator[](const int index) const {
+    if (index <= 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
     return data[index];
 }
 
 ptrdiff_t ArrayD::ssize() const { return ssize_; }
 
 void ArrayD::resize(const int& new_size){
-    if (new_size <= 0) { throw std::invalid_argument("invalid size");}
+    if (new_size <= 0) { throw std::out_of_range("invalid size");}
     double* old = data;
     ssize_ = new_size;
     data = new double[new_size];
@@ -53,7 +58,7 @@ void ArrayD::resize(const int& new_size){
 }
 
 void ArrayD::insert(const int& i, const double& elem) {
-    if (i <= 0 || i > ssize_) {throw std::invalid_argument("invalid index");}
+    if (i <= 0 || i > ssize_) {throw std::out_of_range("invalid index");}
     ssize_ += 1;
     double* old = data;
     data = new double[ssize_];

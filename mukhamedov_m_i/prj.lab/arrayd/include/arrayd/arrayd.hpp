@@ -15,7 +15,8 @@ public:
     //Деструктор
     ~ArrayD() = default;
     //Оператор итерирования
-    double& operator[](int index) const;
+    const double& operator[](const int index) const;
+    double& operator[](const int index);
     //Взятие размера
     ptrdiff_t ssize() const;
     //Изменение размера
