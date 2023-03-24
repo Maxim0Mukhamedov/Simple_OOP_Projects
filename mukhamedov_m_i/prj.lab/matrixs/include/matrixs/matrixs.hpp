@@ -1,6 +1,6 @@
 #include <cstddef>
 #include "iosfwd"
-
+#include "tuple"
 class MatrixS
 {
 public:
@@ -14,14 +14,12 @@ public:
     const int& at(int index_row, int index_col) const;
     int& at(int index_row, int index_col);
     //Взятие размера
-    const int cols() const;
-    const int rows() const;
-    void resize(int rows, int cols);
+    [[nodiscard]] int getRows() const noexcept;
+    [[nodiscard]] int getCols() const noexcept;
     //Изменение размера
-    //void resize(const int& size);
+    void resize(int rows, int cols);
 private:
     int* data = nullptr;
-    int col = 0;
-    int row = 0;
+    std::tuple<int,int> shape{0,0};
 };
 
