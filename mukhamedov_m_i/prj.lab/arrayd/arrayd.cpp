@@ -3,7 +3,10 @@
 #include "stdexcept"
 #include "arrayd/arrayd.hpp"
 
-ArrayD::ArrayD(int s) : ssize_(s) { data = new double[ssize_]; }
+ArrayD::ArrayD(int s) : ssize_(s) {
+    capacity_ = ssize_ * 2;
+    data = new double[capacity_];
+}
 
 ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_)
 {
@@ -15,7 +18,8 @@ ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_)
 
 ArrayD::ArrayD(std::initializer_list<double> list) : ssize_(list.size())
 {
-    data = new double[ssize_];
+    capacity_ = ssize_ * 2;
+    data = new double[capacity_];
     int i = 0;
     for (auto& item : list)
         data[i++] = item;
@@ -24,14 +28,17 @@ ArrayD::ArrayD(std::initializer_list<double> list) : ssize_(list.size())
 ArrayD &ArrayD::operator=(const ArrayD &other) {
     delete[] data;
     ssize_ = other.ssize();
-    data = new double[ssize_];
+    capacity_ = ssize_ * 2;
+    data = new double[capacity_];
     for(int i = 0; i < ssize_; ++i)
         data[i] = other.data[i];
+    return *this;
 }
 
-ArrayD::ArrayD(ArrayD &&other) : ssize_(other.ssize_), data(other.data) //Конструктор копирования && - означает временную ссылку, как только функция закончиться объект other будет удален
+ArrayD::ArrayD(ArrayD &&other) : ssize_(other.ssize_), data(other.data), capacity_(other.capacity_) //Конструктор копирования && - означает временную ссылку, как только функция закончиться объект other будет удален
 {
     other.ssize_ = 0;
+    other.capacity_ = 0;
     other.data = nullptr;
 }
 double &ArrayD::operator[](int index) {
@@ -47,30 +54,26 @@ const double& ArrayD::operator[](const int index) const {
 ptrdiff_t ArrayD::ssize() const { return ssize_; }
 
 void ArrayD::resize(const int& new_size){
-    if (new_size <= 0) { throw std::out_of_range("invalid size");}
-    double* old = data;
-    ssize_ = new_size;
-    data = new double[new_size];
-    int min_size = size_t(old) < new_size ? size_t(old) : ssize_;
-    for (int i = 0; i < min_size; ++i) {
-        data[i] = old[i];
+    if (new_size <= 0) { throw std::invalid_argument("invalid size");}
+    if (capacity_ < new_size) {
+        double* old = data;
+        capacity_ = new_size * 2;
+        data = new double[capacity_];
+        for (int i = 0; i < new_size; i++) {
+            data[i] = old[i];
+        }
+        delete[] old;
     }
-    delete[] old;
+    ssize_ = new_size;
 }
 
 void ArrayD::insert(const int& i, const double& elem) {
     if (i <= 0 || i > ssize_) {throw std::out_of_range("invalid index");}
-    ssize_ += 1;
-    double* old = data;
-    data = new double[ssize_];
-    for (int j = 0; j < i; ++j) {
-        data[j] = old[j];
+    (*this).resize(ssize_ + 1);
+    for (int j = ssize_ - 1; j > i; --j) {
+        data[j] = data[j - 1];
     }
     data[i] = elem;
-    for (int j = i + 1; j < ssize_; ++j) {
-        data[j] = old[j - 1];
-    }
-    delete[] old;
 }
 void ArrayD::remove(const int& i) {
     std::rotate(data + i, data + i + 1, data + ssize_);
@@ -87,7 +90,7 @@ std::istream &ArrayD::ReadFrom(std::istream &istrm) {
             i++;
         }
     } else {
-        throw std::exception();
+        istrm.setstate(std::ios_base::failbit);
     }
     return istrm;
 }

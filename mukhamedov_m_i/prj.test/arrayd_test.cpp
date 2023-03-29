@@ -7,6 +7,8 @@ TEST_CASE("testing the DynamicArrays functions") {
     CHECK_NOTHROW(ArrayD{1, 2});
     ArrayD a{1,2};
     ArrayD b;
+    std::cout << a << '\n';
+    a.resize(4);
     a.remove(1);
     a.insert(1,3);
     b = a;
