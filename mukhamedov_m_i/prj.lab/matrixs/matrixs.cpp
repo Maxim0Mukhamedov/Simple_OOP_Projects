@@ -1,9 +1,6 @@
 #include "matrixs/matrixs.hpp"
-#include <cstddef>
 #include <stdexcept>
-#include "iosfwd"
-#include "tuple"
-#include "utility"
+#include <tuple>
 
 MatrixS::MatrixS(int new_rows, int new_cols){
     std::get<0>(shape) = new_rows;
@@ -35,11 +32,11 @@ MatrixS& MatrixS::operator=(const MatrixS &other){
 }
 
 const int& MatrixS::at(int index_row, int index_col) const {
-    if (index_row >= std::get<0>(shape) || index_row < 0 || index_col >= std::get<1>(shape) || index_col < 0) {throw std::invalid_argument("invalid index");}
+    if (index_row >= std::get<0>(shape) || index_row < 0 || index_col >= std::get<1>(shape) || index_col < 0) {throw std::out_of_range("invalid index");}
     return data[std::get<1>(shape) * index_row + index_col];
 }
 int& MatrixS::at(int index_row, int index_col) {
-    if (index_row >= std::get<0>(shape) || index_row < 0 || index_col >= std::get<1>(shape) || index_col < 0) {throw std::invalid_argument("invalid index");}
+    if (index_row >= std::get<0>(shape) || index_row < 0 || index_col >= std::get<1>(shape) || index_col < 0) {throw std::out_of_range("invalid index");}
     return data[std::get<1>(shape) * index_row + index_col];
 }
 

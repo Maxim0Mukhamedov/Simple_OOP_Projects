@@ -1,5 +1,6 @@
 #include <initializer_list>
 #include <cstddef>
+#include "stdexcept"
 #include <iostream>
 #include <algorithm>
 //

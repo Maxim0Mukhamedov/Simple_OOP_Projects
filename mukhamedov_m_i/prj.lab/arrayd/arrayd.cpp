@@ -1,5 +1,6 @@
 #include <iostream>
 #include <algorithm>
+#include "stdexcept"
 #include "arrayd/arrayd.hpp"
 
 ArrayD::ArrayD(int s) : ssize_(s) { data = new double[ssize_]; }

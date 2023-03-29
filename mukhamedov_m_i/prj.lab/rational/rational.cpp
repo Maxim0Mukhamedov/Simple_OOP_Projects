@@ -1,5 +1,5 @@
 #include <iostream>
-#include <exception>
+#include <stdexcept>
 #include <string>
 #include "rational/rational.hpp"
 

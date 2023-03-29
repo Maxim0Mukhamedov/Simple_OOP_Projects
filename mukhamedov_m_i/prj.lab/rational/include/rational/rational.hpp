@@ -21,7 +21,6 @@ public:
     Rational operator*(const Rational& rhs);
     Rational operator*(const int32_t & rhs);
     Rational operator-();
-
     //Compare
     bool operator==(const Rational& rhs) const;
     bool operator>(const Rational& rhs) const;;
