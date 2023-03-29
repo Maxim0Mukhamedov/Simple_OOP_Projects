@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "arrayt/arrayt.hpp"
 #include "doctest/doctest.h"
-TEST_CASE("testing the DynamicArraysT functions") {
+TEST_CASE("testing the T functions") {
     CHECK_NOTHROW(ArrayT<int>{1, 2});
     CHECK_NOTHROW(ArrayT<int>{1, 2}.ssize());
     CHECK_NOTHROW(ArrayT<int>{1, 2});
@@ -23,3 +23,4 @@ TEST_CASE("testing the DynamicArraysT functions") {
 //a[index] = elem and then a[index] == elem
 //and this with every
 //empty to array
+

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <exception>
 #include <string>
-#include "include/rational/rational.hpp"
+#include "rational/rational.hpp"
 
 //greatest common division
 int32_t GCD( int32_t a, int32_t b) {
