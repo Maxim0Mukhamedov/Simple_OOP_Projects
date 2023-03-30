@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include "sstream"
 #include "rational/rational.hpp"
 
 //greatest common division
@@ -44,18 +45,23 @@ std::istream& operator>>(std::istream& istrm, Rational& rhs){
 std::istream& Rational::readFrom(std::istream& istrm) {
     int32_t p(0);
     int32_t q(1);
-    char divide(0);
-    istrm >> p;
-    istrm >> divide;
-    istrm >> q;
-    if (istrm.good() || !istrm.fail() && istrm.eof()) {
-        if (Rational::separator == divide && q >= 0) {
-            istrm.clear();
+    char divide;
+    std::string in;
+    istrm >> in;
+    std::istringstream sstrm(in);
+    sstrm >> p;
+    sstrm >> divide;
+    sstrm >> q;
+    if (sstrm.fail()) istrm.setstate(std::ios_base::failbit);
+    if (sstrm.good() || !sstrm.fail()) {
+        if ((Rational::separator == divide) && (q >= 0) && (in.find(' ') == std::string::npos)) {
+
             *this = Rational(p, q);
         } else {
             istrm.setstate(std::ios_base::failbit);
         }
     }
+    sstrm.clear();
     return istrm;
 }
 //Algebra
