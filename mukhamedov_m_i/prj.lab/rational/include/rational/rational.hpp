@@ -1,5 +1,6 @@
-#include <iosfwd>
-#include <cstdint>
+#include <cstddef>
+#include "iosfwd"
+
 
 //greatest common division
 int32_t GCD( int32_t a, int32_t b);

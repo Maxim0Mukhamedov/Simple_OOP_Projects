@@ -1,6 +1,6 @@
 #include <iostream>
 #include <algorithm>
-#include "stdexcept"
+#include <stdexcept>
 #include "arrayd/arrayd.hpp"
 
 ArrayD::ArrayD(int s) : ssize_(s) {
