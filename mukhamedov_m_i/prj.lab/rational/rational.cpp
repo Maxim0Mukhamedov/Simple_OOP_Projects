@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdexcept>
+#include <stdint.h>
 #include "rational/rational.hpp"
 
 //greatest common division

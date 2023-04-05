@@ -1,5 +1,5 @@
 #include <initializer_list>
-#include <cstddef>
+#include <stdint.h>
 #include <iosfwd>
 
 class ArrayD
@@ -8,7 +8,6 @@ public:
     // Конструкторы
     ArrayD(int s = 0);
     ArrayD(const ArrayD& other);
-    ArrayD(std::initializer_list<double> list);
     ArrayD& operator=(const ArrayD& other);
     //Копирование
     ArrayD(ArrayD&& other);
@@ -18,7 +17,7 @@ public:
     const double& operator[](const int index) const;
     double& operator[](const int index);
     //Взятие размера
-    ptrdiff_t ssize() const;
+    int32_t ssize() const;
     //Изменение размера
     void resize(const int& size);
     void insert(const int& i, const double& elem);

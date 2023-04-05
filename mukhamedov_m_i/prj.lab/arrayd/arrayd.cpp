@@ -4,6 +4,7 @@
 #include "arrayd/arrayd.hpp"
 
 ArrayD::ArrayD(int s) : ssize_(s) {
+    if (s < 0) { throw std::invalid_argument("invalid size");}
     capacity_ = ssize_ * 2;
     data = new double[capacity_];
 }
@@ -16,16 +17,7 @@ ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_)
         data[i] = other.data[i];
 }
 
-ArrayD::ArrayD(std::initializer_list<double> list) : ssize_(list.size())
-{
-    capacity_ = ssize_ * 2;
-    data = new double[capacity_];
-    int i = 0;
-    for (auto& item : list)
-        data[i++] = item;
-}
-
-ArrayD &ArrayD::operator=(const ArrayD &other) {
+ArrayD& ArrayD::operator=(const ArrayD &other) {
     delete[] data;
     ssize_ = other.ssize();
     capacity_ = ssize_ * 2;
@@ -42,16 +34,16 @@ ArrayD::ArrayD(ArrayD &&other) : ssize_(other.ssize_), data(other.data), capacit
     other.data = nullptr;
 }
 double &ArrayD::operator[](int index) {
-    if (index <= 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
+    if (index < 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
     return data[index];
 }
 
 const double& ArrayD::operator[](const int index) const {
-    if (index <= 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
+    if (index < 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
     return data[index];
 }
 
-ptrdiff_t ArrayD::ssize() const { return ssize_; }
+int32_t ArrayD::ssize() const { return ssize_; }
 
 void ArrayD::resize(const int& new_size){
     if (new_size <= 0) { throw std::invalid_argument("invalid size");}
@@ -68,7 +60,7 @@ void ArrayD::resize(const int& new_size){
 }
 
 void ArrayD::insert(const int& i, const double& elem) {
-    if (i <= 0 || i > ssize_) {throw std::out_of_range("invalid index");}
+    if (i < 0 || i > ssize_) {throw std::out_of_range("invalid index");}
     (*this).resize(ssize_ + 1);
     for (int j = ssize_ - 1; j > i; --j) {
         data[j] = data[j - 1];
@@ -76,6 +68,7 @@ void ArrayD::insert(const int& i, const double& elem) {
     data[i] = elem;
 }
 void ArrayD::remove(const int& i) {
+    if (i < 0 || i > ssize_) {throw std::out_of_range("invalid index");}
     std::rotate(data + i, data + i + 1, data + ssize_);
     (*this).resize(ssize_ - 1);
 }

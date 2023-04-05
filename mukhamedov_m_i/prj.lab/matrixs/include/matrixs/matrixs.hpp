@@ -1,25 +1,53 @@
-#include <cstddef>
+#include <stdint.h>
 #include <iosfwd>
 #include <tuple>
-class MatrixS
-{
+
+class MatrixS {
 public:
-    // Конструкторы
-    MatrixS(int rows = 0, int cols = 0);
+    using SizeType = std::tuple<std::ptrdiff_t, std::ptrdiff_t>;
+public:
+    explicit MatrixS(const SizeType& size = {0, 0});
+    MatrixS(const std::ptrdiff_t m = 0, const std::ptrdiff_t n = 0);
+    ~MatrixS() = default;
+
     MatrixS(const MatrixS& other);
     MatrixS& operator=(const MatrixS& other);
-    //Деструктор
-    ~MatrixS() = default;
-    //Оператор итерирования
-    const int& at(int index_row, int index_col) const;
-    int& at(int index_row, int index_col);
-    //Взятие размера
-    [[nodiscard]] int getRows() const noexcept;
-    [[nodiscard]] int getCols() const noexcept;
-    //Изменение размера
-    void resize(int rows, int cols);
+
+    /**
+     * \brief Возвращает элемент матрицы под индексами {i, j}
+     * \param[in] elem индексы элемента
+     * \return элемент матрицы
+     * \throw std::out_of_range если i вне диапазона [0, m) или j вне диапазона [0, n)
+     */
+    [[nodiscard]] int& at(const SizeType& elem);
+    [[nodiscard]] const int& at(const SizeType& elem) const;
+    [[nodiscard]] int& at(const std::ptrdiff_t i, const std::ptrdiff_t j);
+    [[nodiscard]] const int& at(const std::ptrdiff_t i, const std::ptrdiff_t j) const;
+
+    /**
+     * \brief Изменение размера матрицы
+     * \param[in] new_size новый размер матрицы {new_m, new_n}
+     * \throw std::invalid_argument если new_m <= 0 или new_n <= 0
+     */
+    void resize(const SizeType& new_size);
+    void resize(const std::ptrdiff_t i, const std::ptrdiff_t j);
+
+    /**
+     * \return текущий размер матрицы {m, n}
+     */
+    [[nodiscard]] const SizeType& ssize() const noexcept;
+
+    /**
+     * \return количество строк в матрице (m)
+     */
+    [[nodiscard]] std::ptrdiff_t nRows() const noexcept;
+
+    /**
+     * \return количество столбцов в матрице (n)
+     */
+    [[nodiscard]] std::ptrdiff_t nCols() const noexcept;
 private:
-    int* data = nullptr;
-    std::tuple<int,int> shape{0,0};
+    int* data_ = nullptr;
+    SizeType size_{0,0};
 };
 
