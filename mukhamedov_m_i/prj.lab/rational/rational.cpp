@@ -4,8 +4,8 @@
 
 //greatest common division
 int32_t GCD( int32_t a, int32_t b) {
-    a = abs(a);
-    b = abs(b);
+    a = a > 0 ? a : -a;
+    b = b > 0 ? b : -b;
     while (a && b) {
         if (a > b) {
             a %= b;

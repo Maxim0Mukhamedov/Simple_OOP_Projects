@@ -1,6 +1,6 @@
 #include <initializer_list>
 #include <cstddef>
-#include "iosfwd"
+#include <iosfwd>
 
 class ArrayD
 {
