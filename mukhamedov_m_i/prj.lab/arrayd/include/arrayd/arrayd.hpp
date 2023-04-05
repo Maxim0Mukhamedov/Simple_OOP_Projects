@@ -1,5 +1,4 @@
-#include <initializer_list>
-#include <stdint.h>
+#include <cstdint>
 #include <iosfwd>
 
 class ArrayD
@@ -17,7 +16,7 @@ public:
     const double& operator[](const int index) const;
     double& operator[](const int index);
     //Взятие размера
-    int32_t ssize() const;
+    [[nodiscard]] int32_t ssize() const;
     //Изменение размера
     void resize(const int& size);
     void insert(const int& i, const double& elem);
