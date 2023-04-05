@@ -69,7 +69,7 @@ void ArrayD::insert(const int& i, const double& elem) {
     data[i] = elem;
 }
 void ArrayD::remove(const int& i) {
-    if (i < 0 || i > ssize_) {throw std::out_of_range("invalid index");}
+    if (i < 0 || i >= ssize_) {throw std::out_of_range("invalid index");}
     std::rotate(data + i, data + i + 1, data + ssize_);
     (*this).resize(ssize_ - 1);
 }

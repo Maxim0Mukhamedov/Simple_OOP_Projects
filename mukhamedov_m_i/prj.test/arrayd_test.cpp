@@ -40,6 +40,10 @@ TEST_CASE("Test with operator[]") {
         ArrayD x(3);
         CHECK_THROWS(x[4]);
     }
+    SUBCASE("Test with out of range index == size") {
+        ArrayD x(3);
+        CHECK_THROWS(x[3]);
+    }
     SUBCASE("Test with out of range index < 0") {
         ArrayD x(3);
         CHECK_THROWS(x[-1]);
@@ -130,9 +134,9 @@ TEST_CASE("Test of ssize, resize, insert, remove function") {
         test_i = test;
         CHECK_THROWS(test_i.remove(-1));
     }
-    SUBCASE("remove from invalid position > size") {
+    SUBCASE("remove from invalid position >= size") {
         test_i = test;
-        CHECK_THROWS(test_i.remove(4));
+        CHECK_THROWS(test_i.remove(3));
     }
 }
 //A ar;
