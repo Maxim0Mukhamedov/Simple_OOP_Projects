@@ -134,9 +134,13 @@ TEST_CASE("Test of ssize, resize, insert, remove function") {
         test_i = test;
         CHECK_THROWS(test_i.remove(-1));
     }
-    SUBCASE("remove from invalid position >= size") {
+    SUBCASE("remove from invalid position == size") {
         test_i = test;
         CHECK_THROWS(test_i.remove(3));
+    }
+    SUBCASE("remove from invalid position > size") {
+        test_i = test;
+        CHECK_THROWS(test_i.remove(4));
     }
 }
 //A ar;

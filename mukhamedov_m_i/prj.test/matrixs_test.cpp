@@ -59,15 +59,25 @@ TEST_CASE("Test of .at() function") {
         CHECK_NOTHROW(test.at(MatrixS::SizeType{2,2}) = 404);
         CHECK((test.at(MatrixS::SizeType{2,2}) == 404));
     }
-    SUBCASE("out of range index >= size") {
+    SUBCASE("out of range index == size") {
         CHECK_THROWS(test.at(3,0));
         CHECK_THROWS(test.at(0,3));
         CHECK_THROWS(test.at(3,3));
     }
-    SUBCASE("out of range index >= size (but index is SizeType)") {
+    SUBCASE("out of range index == size (but index is SizeType)") {
         CHECK_THROWS(test.at(MatrixS::SizeType{3,0}));
         CHECK_THROWS(test.at(MatrixS::SizeType{0,3}));
         CHECK_THROWS(test.at(MatrixS::SizeType{3,3}));
+    }
+    SUBCASE("out of range index > size") {
+        CHECK_THROWS(test.at(4,0));
+        CHECK_THROWS(test.at(0,4));
+        CHECK_THROWS(test.at(4,4));
+    }
+    SUBCASE("out of range index > size (but index is SizeType)") {
+        CHECK_THROWS(test.at(MatrixS::SizeType{4,0}));
+        CHECK_THROWS(test.at(MatrixS::SizeType{0,4}));
+        CHECK_THROWS(test.at(MatrixS::SizeType{4,4}));
     }
     SUBCASE("out of range index < 0") {
         CHECK_THROWS(test.at(-1,0));
