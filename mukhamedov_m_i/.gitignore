@@ -49,5 +49,5 @@ cmake-build-debug/
 *.swp
 *.swo
 *.DS_Store
-#bin directore
+#bin directores
 /bin*
