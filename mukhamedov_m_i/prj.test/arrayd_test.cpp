@@ -19,6 +19,10 @@ TEST_CASE("Test construct and copy") {
         y[0] = 2;
         CHECK((x[0] != y[0]));
     }
+    SUBCASE("Test operator= with same ArrayD") {
+        ArrayD x(1);
+        CHECK_THROWS(x = x);
+    }
 }
 TEST_CASE("Test with operator[]") {
     SUBCASE("Test with middle index") {

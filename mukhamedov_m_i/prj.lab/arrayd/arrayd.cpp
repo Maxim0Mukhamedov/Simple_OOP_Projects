@@ -14,11 +14,10 @@ ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_)
 {
     capacity_ = ssize_*2;
     data = new double[capacity_];
-    for(int i = 0; i < ssize_; ++i)
-        data[i] = other.data[i];
 }
 
 ArrayD& ArrayD::operator=(const ArrayD &other) {
+    if (other.data == data) {throw std::invalid_argument("You can't use operator= with same ArrayD");}
     delete[] data;
     ssize_ = other.ssize();
     capacity_ = ssize_ * 2;
