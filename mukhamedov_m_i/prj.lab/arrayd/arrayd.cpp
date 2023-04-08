@@ -10,42 +10,49 @@ ArrayD::ArrayD(int s) : ssize_(s) {
     data = new double[capacity_];
 }
 
-ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_)
-{
+ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_) {
     capacity_ = ssize_*2;
     data = new double[capacity_];
 }
 
 ArrayD& ArrayD::operator=(const ArrayD &other) {
-    if (other.data == data) {throw std::invalid_argument("You can't use operator= with same ArrayD");}
+    if (other.data == data) {
+        throw std::invalid_argument("You can't use operator= with same MatrixS");
+    }
     delete[] data;
     ssize_ = other.ssize();
     capacity_ = ssize_ * 2;
     data = new double[capacity_];
-    for(int i = 0; i < ssize_; ++i)
+    for (int i = 0; i < ssize_; ++i)
         data[i] = other.data[i];
     return *this;
 }
 
-ArrayD::ArrayD(ArrayD &&other) : ssize_(other.ssize_), data(other.data), capacity_(other.capacity_) //Конструктор копирования && - означает временную ссылку, как только функция закончиться объект other будет удален
-{
+ArrayD::ArrayD(ArrayD &&other)
+: ssize_(other.ssize_),
+  data(other.data),
+  capacity_(other.capacity_) {
     other.ssize_ = 0;
     other.capacity_ = 0;
     other.data = nullptr;
 }
 double &ArrayD::operator[](int index) {
-    if (index < 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
+    if (index < 0 || index >= ssize_) {
+        throw std::out_of_range("invalid index");
+    }
     return data[index];
 }
 
 const double& ArrayD::operator[](const int index) const {
-    if (index < 0 || index >= ssize_) {throw std::out_of_range("invalid index");}
+    if (index < 0 || index >= ssize_) {
+        throw std::out_of_range("invalid index");
+    }
     return data[index];
 }
 
 int32_t ArrayD::ssize() const { return ssize_; }
 
-void ArrayD::resize(const int& new_size){
+void ArrayD::resize(const int& new_size) {
     if (new_size <= 0) { throw std::invalid_argument("invalid size");}
     if (capacity_ < new_size) {
         double* old = data;
@@ -77,7 +84,7 @@ std::istream &ArrayD::ReadFrom(std::istream &istrm) {
     if (ssize_ > 0) {
         int i = 0;
         double xi = 0;
-        while (!istrm.eof() && istrm.good() && i < ssize_){
+        while (!istrm.eof() && istrm.good() && i < ssize_) {
             istrm >> xi;
             data[i] = xi;
             i++;

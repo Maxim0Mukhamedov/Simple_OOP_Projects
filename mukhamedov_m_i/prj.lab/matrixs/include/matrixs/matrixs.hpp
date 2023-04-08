@@ -6,11 +6,12 @@
 #include <tuple>
 
 class MatrixS {
-public:
+ public:
     using SizeType = std::tuple<std::ptrdiff_t, std::ptrdiff_t>;
-public:
+
+ public:
     explicit MatrixS(const SizeType& size = {0, 0});
-    MatrixS(const std::ptrdiff_t m = 0, const std::ptrdiff_t n = 0);
+    explicit MatrixS(const std::ptrdiff_t m = 0, const std::ptrdiff_t n = 0);
     ~MatrixS() = default;
 
     MatrixS(const MatrixS& other);
@@ -25,7 +26,8 @@ public:
     [[nodiscard]] int& at(const SizeType& elem);
     [[nodiscard]] const int& at(const SizeType& elem) const;
     [[nodiscard]] int& at(const std::ptrdiff_t i, const std::ptrdiff_t j);
-    [[nodiscard]] const int& at(const std::ptrdiff_t i, const std::ptrdiff_t j) const;
+    [[nodiscard]] const int& at(const std::ptrdiff_t i,
+                                const std::ptrdiff_t j) const;
 
     /**
      * \brief Изменение размера матрицы
@@ -49,9 +51,10 @@ public:
      * \return количество столбцов в матрице (n)
      */
     [[nodiscard]] std::ptrdiff_t nCols() const noexcept;
-private:
+
+ private:
     int* data_ = nullptr;
-    SizeType size_{0,0};
+    SizeType size_{0, 0};
 };
 
 #endif
