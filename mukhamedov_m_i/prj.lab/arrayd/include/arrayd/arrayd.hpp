@@ -1,3 +1,6 @@
+#ifndef ARRAYD_HPP
+#define ARRAYD_HPP
+
 #include <cstdint>
 #include <iosfwd>
 
@@ -33,3 +36,5 @@ private:
 std::ostream& operator<<(std::ostream& ostrm, ArrayD& array);
 std::istream& operator>>(std::istream& istrm, ArrayD& array);
 //insert remove
+
+#endif

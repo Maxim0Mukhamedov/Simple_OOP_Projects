@@ -1,3 +1,6 @@
+#ifndef RATIONAL_HPP
+#define RATIONAL_HPP
+
 #include <cstdint>
 #include <iosfwd>
 
@@ -60,3 +63,5 @@ bool operator>(const Rational &lhs,const int32_t &rhs);
 bool operator<(const Rational &lhs,const int32_t &rhs);
 bool operator<=(const Rational &lhs,const int32_t &rhs);
 bool operator>=(const Rational &lhs,const int32_t &rhs);
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef MATRIXS_HPP
+#define MATRIXS_HPP
+
 #include <cstdint>
 #include <iosfwd>
 #include <tuple>
@@ -50,4 +53,6 @@ private:
     int* data_ = nullptr;
     SizeType size_{0,0};
 };
+
+#endif
 

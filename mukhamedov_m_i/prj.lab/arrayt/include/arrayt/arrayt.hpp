@@ -1,3 +1,7 @@
+#ifndef ARRAYT_HPP
+#define ARRAYT_HPP
+
+
 #include <initializer_list>
 #include <cstddef>
 #include "stdexcept"
@@ -154,3 +158,5 @@ template<typename T>
 std::istream &operator>>(std::istream &istrm, ArrayT<T> &array) {
     return array.ReadFrom(istrm);
 }
+
+#endif

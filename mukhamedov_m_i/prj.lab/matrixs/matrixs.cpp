@@ -2,10 +2,8 @@
 #include <stdexcept>
 #include <tuple>
 
- MatrixS::MatrixS(const SizeType& size){
+ MatrixS::MatrixS(const SizeType& size): size_(size){
     if (std::get<0>(size) < 0 || std::get<1>(size) < 0) { throw std::invalid_argument("invalid size");}
-    std::get<0>(size_) = std::get<0>(size);
-    std::get<1>(size_) = std::get<1>(size);
     data_ = new int[std::get<0>(size_) * std::get<1>(size_)];
     for (int i = 0; i < std::get<0>(size_) * std::get<1>(size_); i++) {
         data_[i] = 0;
@@ -21,9 +19,7 @@ MatrixS::MatrixS(const std::ptrdiff_t m, const std::ptrdiff_t n){
     }
 }
 
-MatrixS::MatrixS(const MatrixS &other) {
-    std::get<0>(size_) = other.nRows();
-    std::get<1>(size_) = other.nCols();
+MatrixS::MatrixS(const MatrixS &other): size_(other.size_){
     data_ = new int[std::get<0>(size_) * std::get<1>(size_)];
     for (int i = 0; i < std::get<0>(size_) * std::get<1>(size_); i++) {
         data_[i] = other.at(i/std::get<1>(size_),i%std::get<0>(size_));
@@ -31,9 +27,9 @@ MatrixS::MatrixS(const MatrixS &other) {
 }
 
 MatrixS& MatrixS::operator=(const MatrixS &other){
+    if (other.data_ == data_) {throw std::invalid_argument("You can't use operator= with same ArrayD");}
+    size_ = other.size_;
     delete[] data_;
-    std::get<0>(size_) = other.nRows();
-    std::get<1>(size_) = other.nCols();
     data_ = new int[std::get<0>(size_) * std::get<1>(size_)];
     for (int i = 0; i < std::get<0>(size_) * std::get<1>(size_); i++) {
         data_[i] = other.at(i/std::get<1>(size_),i%std::get<1>(size_));
@@ -41,16 +37,12 @@ MatrixS& MatrixS::operator=(const MatrixS &other){
 }
 
 [[nodiscard]] const int& MatrixS::at(const SizeType& indexs) const {
-    std::ptrdiff_t index_row = std::get<0>(indexs);
-    std::ptrdiff_t index_col = std::get<1>(indexs);
-    if (index_row >= std::get<0>(size_) || index_row < 0 || index_col >= std::get<1>(size_) || index_col < 0) {throw std::out_of_range("invalid index");}
-    return data_[std::get<1>(size_) * index_row + index_col];
+    if (std::get<0>(indexs) >= std::get<0>(size_) || std::get<0>(indexs) < 0 || std::get<1>(indexs) >= std::get<1>(size_) || std::get<1>(indexs) < 0) {throw std::out_of_range("invalid index");}
+    return data_[std::get<1>(size_) * std::get<0>(indexs) + std::get<1>(indexs)];
 }
 [[nodiscard]] int& MatrixS::at(const SizeType& indexs) {
-    std::ptrdiff_t index_row = std::get<0>(indexs);
-    std::ptrdiff_t index_col = std::get<1>(indexs);
-    if (index_row >= std::get<0>(size_) || index_row < 0 || index_col >= std::get<1>(size_) || index_col < 0) {throw std::out_of_range("invalid index");}
-    return data_[std::get<1>(size_) * index_row + index_col];
+    if (std::get<0>(indexs) >= std::get<0>(size_) || std::get<0>(indexs) < 0 || std::get<1>(indexs) >= std::get<1>(size_) || std::get<1>(indexs) < 0) {throw std::out_of_range("invalid index");}
+    return data_[std::get<1>(size_) * std::get<0>(indexs) + std::get<1>(indexs)];
 }
 
 [[nodiscard]] const int& MatrixS::at(const std::ptrdiff_t  index_row, const std::ptrdiff_t index_col) const {
@@ -73,19 +65,17 @@ MatrixS& MatrixS::operator=(const MatrixS &other){
 
 
 void MatrixS::resize(const SizeType& size) {
-    std::ptrdiff_t nRows = std::get<0>(size);
-    ptrdiff_t nCols = std::get<1>(size);
-    if (nRows <= 0 || nCols <= 0) {throw std::invalid_argument("invalid size");}
+    if (std::get<0>(size) <= 0 || std::get<1>(size) <= 0) {throw std::invalid_argument("invalid size");}
     int* old = data_;
-    data_ = new int[nRows * nCols];
-    for (int i = 0; i < nRows*nCols; i++) {data_[i] = 0;}
+    data_ = new int[std::get<0>(size) * std::get<1>(size)];
+    for (int i = 0; i < std::get<0>(size)*std::get<1>(size); i++) {data_[i] = 0;}
     for (int i = 0; i < std::get<0>(size_); i++) {
         for (int j = 0; j < std::get<1>(size_); j++) {
             data_[std::get<1>(size_) * i + j] = old[std::get<1>(size_) * i + j];
         }
     }
-    std::get<0>(size_) = nRows;
-    std::get<1>(size_) = nCols;
+    std::get<0>(size_) = std::get<0>(size);
+    std::get<1>(size_) = std::get<1>(size);
     delete[] old;
 }
 

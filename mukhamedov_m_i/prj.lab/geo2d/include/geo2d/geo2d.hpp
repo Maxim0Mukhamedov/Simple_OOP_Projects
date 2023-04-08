@@ -1,4 +1,5 @@
+#ifndef GEO2D_HPP
+#define GEO2D_HPP
 
-class Figure2D {
 
-};
+#endif
