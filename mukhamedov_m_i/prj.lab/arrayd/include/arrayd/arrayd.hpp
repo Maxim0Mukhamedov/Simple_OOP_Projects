@@ -15,8 +15,8 @@ class ArrayD {
     // Деструктор
     ~ArrayD() = default;
     // Оператор итерирования
-    const double& operator[](const int index) const;
-    double& operator[](const int index);
+    const double& operator[](const int& index) const;
+    double& operator[](const int& index);
     // Взятие размера
     [[nodiscard]] int32_t ssize() const;
     // Изменение размера

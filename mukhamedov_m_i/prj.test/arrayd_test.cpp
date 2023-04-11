@@ -2,6 +2,7 @@
 #include "arrayd/arrayd.hpp"
 #include "doctest/doctest.h"
 
+
 TEST_CASE("Test construct and copy") {
     SUBCASE("Test with normal size") {
         CHECK_NOTHROW(ArrayD(3));
@@ -145,6 +146,42 @@ TEST_CASE("Test of ssize, resize, insert, remove function") {
     SUBCASE("remove from invalid position > size") {
         test_i = test;
         CHECK_THROWS(test_i.remove(4));
+    }
+}
+TEST_CASE("My tests") {
+    ArrayD a(4);
+
+    SUBCASE("Test: inserting value") {
+        for (int i = 0; i < 4; i++) {
+            a[i] = double(i+1);
+        }
+        a.insert(4, 5);
+
+        for (int i = 0; i < 5; i++) {
+            CHECK(a[i] == double(i+1));
+        }
+        CHECK(a.ssize() == 5);
+
+        a.insert(5, 5);
+        CHECK(a.ssize() == 6);
+    }
+
+    SUBCASE("Test: removing values"){
+        ArrayD b(4);
+        for (int i = 0; i < 4; i++) {
+            b[i] = double(i+1);
+        }
+        b.insert(4, 5);
+
+        b.insert(5, 5);
+        CHECK(b.ssize() == 6);
+
+        b.remove(2);
+        CHECK(b[0] == 1);
+        CHECK(b[1] == 2);
+        CHECK(b[2] == 4);
+        CHECK(b[3] == 5);
+        CHECK(b.ssize() == 5);
     }
 }
 //A ar;

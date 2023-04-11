@@ -4,7 +4,7 @@
 #include <cstdint>
 #include "arrayd/arrayd.hpp"
 
-ArrayD::ArrayD(int s) : ssize_(s) {
+ArrayD::ArrayD(const int s) : ssize_(s) {
     if (s < 0) { throw std::invalid_argument("invalid size");}
     capacity_ = ssize_ * 2;
     data = new double[capacity_];
@@ -36,14 +36,14 @@ ArrayD::ArrayD(ArrayD &&other)
     other.capacity_ = 0;
     other.data = nullptr;
 }
-double &ArrayD::operator[](int index) {
+double &ArrayD::operator[](const int& index) {
     if (index < 0 || index >= ssize_) {
         throw std::out_of_range("invalid index");
     }
     return data[index];
 }
 
-const double& ArrayD::operator[](const int index) const {
+const double& ArrayD::operator[](const int& index) const {
     if (index < 0 || index >= ssize_) {
         throw std::out_of_range("invalid index");
     }
