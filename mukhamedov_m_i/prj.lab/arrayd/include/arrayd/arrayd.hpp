@@ -10,8 +10,6 @@ class ArrayD {
     explicit ArrayD(int s = 0);
     ArrayD(const ArrayD& other);
     ArrayD& operator=(const ArrayD& other);
-    // Копирование
-    ArrayD(ArrayD&& other);
     // Деструктор
     ~ArrayD() = default;
     // Оператор итерирования
@@ -25,7 +23,7 @@ class ArrayD {
     void remove(const int& i);
     // Ввод/вывод
     std::istream& ReadFrom(std::istream& istrm);
-    std::ostream& WriteTo(std::ostream& ostrm);
+    std::ostream& WriteTo(std::ostream& ostrm); //const
 
  private:
     double *data = nullptr;

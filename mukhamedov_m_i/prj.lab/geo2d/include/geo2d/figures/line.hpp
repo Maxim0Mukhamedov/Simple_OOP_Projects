@@ -1,7 +1,7 @@
 #ifndef LINE_HPP
 #define LINE_HPP
 
-#include "geo2d.hpp"
+#include "../geo2d.hpp"
 #include "point.hpp"
 
 class Line: public Figure {

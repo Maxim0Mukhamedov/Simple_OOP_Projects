@@ -29,14 +29,13 @@ MatrixS::MatrixS(const MatrixS &other): size_(other.size_) {
 }
 
 MatrixS& MatrixS::operator=(const MatrixS &other) {
-    if (other.data_ == data_) {
-        throw std::invalid_argument("You can't use operator= with same MatrixS");
-    }
-    size_ = other.size_;
-    delete[] data_;
-    data_ = new int[std::get<0>(size_) * std::get<1>(size_)];
-    for (int i = 0; i < std::get<0>(size_) * std::get<1>(size_); i++) {
-        data_[i] = other.at(i/std::get<1>(size_), i%std::get<1>(size_));
+    if (data_ != other.data_) {
+        size_ = other.size_;
+        delete[] data_;
+        data_ = new int[std::get<0>(size_) * std::get<1>(size_)];
+        for (int i = 0; i < std::get<0>(size_) * std::get<1>(size_); i++) {
+            data_[i] = other.at(i / std::get<1>(size_), i % std::get<1>(size_));
+        }
     }
 }
 

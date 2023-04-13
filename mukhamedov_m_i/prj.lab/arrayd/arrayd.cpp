@@ -7,7 +7,7 @@
 ArrayD::ArrayD(const int s) : ssize_(s) {
     if (s < 0) { throw std::invalid_argument("invalid size");}
     capacity_ = ssize_ * 2;
-    data = new double[capacity_];
+    data = new double[capacity_]{};
 }
 
 ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_) {
@@ -16,26 +16,18 @@ ArrayD::ArrayD(const ArrayD &other) : ssize_(other.ssize_) {
 }
 
 ArrayD& ArrayD::operator=(const ArrayD &other) {
-    if (other.data == data) {
-        throw std::invalid_argument("You can't use operator= with same MatrixS");
+    if (data != other.data) {
+        delete[] data;
+        ssize_ = other.ssize();
+        capacity_ = ssize_ * 2;
+        data = new double[capacity_];
+        for (int i = 0; i < ssize_; ++i)
+            data[i] = other.data[i];
     }
-    delete[] data;
-    ssize_ = other.ssize();
-    capacity_ = ssize_ * 2;
-    data = new double[capacity_];
-    for (int i = 0; i < ssize_; ++i)
-        data[i] = other.data[i];
     return *this;
 }
 
-ArrayD::ArrayD(ArrayD &&other)
-: ssize_(other.ssize_),
-  data(other.data),
-  capacity_(other.capacity_) {
-    other.ssize_ = 0;
-    other.capacity_ = 0;
-    other.data = nullptr;
-}
+
 double &ArrayD::operator[](const int& index) {
     if (index < 0 || index >= ssize_) {
         throw std::out_of_range("invalid index");

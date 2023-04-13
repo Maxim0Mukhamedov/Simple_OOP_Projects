@@ -20,9 +20,12 @@ TEST_CASE("Test construct and copy") {
         y[0] = 2;
         CHECK((x[0] != y[0]));
     }
-    SUBCASE("Test operator= with same ArrayD") {
-        ArrayD x(1);
-        CHECK_THROWS(x = x);
+    SUBCASE("Test copy yourself") {
+        ArrayD x(2);
+        x[0] = 404;
+        x[1] = 404;
+        x = x;
+        CHECK((x[0] == 404 && x[1] == 404));
     }
 }
 TEST_CASE("Test with operator[]") {

@@ -5,7 +5,8 @@
 #include "transform.hpp"
 
 class Drawer {
-
+ //LaTex
+ //OpenCV rastor
 };
 class Iterator {
 
@@ -30,6 +31,7 @@ class Figure {
     void WriteTo(const std::istream& istrm) {
 
     }
+
     void GetTransform() {
 
     }

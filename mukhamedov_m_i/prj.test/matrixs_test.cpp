@@ -32,8 +32,11 @@ TEST_CASE("Test of constructors") {
         CHECK((test.at(0,0) != another.at(0,0)));
     }
     SUBCASE("Test construct with another MatrixS with operator= and same MatrixS") {
-        MatrixS x(1,1);
-        CHECK_THROWS(x = x);
+        MatrixS x(1,2);
+        x.at(0,0) = 404;
+        x.at(0,1) = 404;
+        x = x;
+        CHECK((x.at(0,0) == 404 && x.at(0,1) == 404));
     }
 }
 
