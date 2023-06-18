@@ -1,6 +1,6 @@
 /**
  * @file ccn.cpp
- * @brief Этот файл хранит реализацию.
+ * @brief This file contains the realisation of the CCN algorithm.
  */
 
 #include <opencv2/core.hpp>
@@ -10,16 +10,8 @@
 #include <cmath>
 
 namespace vision {
-
-/**
- * @brief Конвертация в RGB-linear.
- *
- * Из диапозона [0, 255] в [0, 1].
- * Функция сторонней библиотеки: https://github.com/PetterS/opencv_srgb_gamma/blob/master/srgb.h
- *
- * @param[in] srgb Число которое нужно перевести в нужный диапозон.
- * @return Возвращает конвертированное число.
- */
+// Convertes an sRGB value in the range [0, 255] to a linear value in
+// the range [0, 1].
     inline float srgb_to_linear(float srgb) {
         auto linear = srgb / 255.0f;
         if (linear <= 0.04045f) {
@@ -30,15 +22,8 @@ namespace vision {
         return linear;
     }
 
-/**
- * @brief Конвертация в RGB.
- *
- * Из диапозона [0, 1] в [0, 255].
- * Функция сторонней библиотеки: https://github.com/PetterS/opencv_srgb_gamma/blob/master/srgb.h
- *
- * @param[in] linear Число которое нужно перевести в нужный диапозон.
- * @return Возвращает конвертированное число.
- */
+// Converts a linear value in the range [0, 1] to an sRGB value in
+// the range [0, 255].
     inline float linear_to_srgb(float linear) {
         float srgb;
         if (linear <= 0.0031308f) {
@@ -49,15 +34,8 @@ namespace vision {
         return srgb * 255.f;
     }
 
-/**
- * @brief Конвертация в RGB-linear.
- *
- * Из диапозона [0, 255] в [0, 1].
- * Функция сторонней библиотеки: https://github.com/PetterS/opencv_srgb_gamma/blob/master/srgb.h
- *
- * @param[in] mat Изображение которое нужно перевести в нужный диапозон.
- * @return Возвращает конвертированное изображение.
- */
+// Converts an OpenCV Mat with sRGB values in the range [0, 255] to
+// a float (CV_32FC3) OpenCV Mat in the range [0, 1].
     static cv::Mat srgb_to_linear(const cv::Mat& mat) {
         cv::Mat linear;
         mat.convertTo(linear, CV_32FC3);
@@ -70,15 +48,8 @@ namespace vision {
         return linear;
     }
 
-/**
- * @brief Конвертация в RGB-linear.
- *
- * Из диапозона [0, 1] в [0, 255].
- * Функция сторонней библиотеки: https://github.com/PetterS/opencv_srgb_gamma/blob/master/srgb.h
- *
- * @param[in] linear Изображение которое нужно перевести в нужный диапозон.
- * @return Возвращает конвертированное изображение.
- */
+// Converts an OpenCV Mat with linear values in the range [0, 1] to
+// a 8-bit (CV_8UC3) OpenCV Mat in the range [0, 255].
     static cv::Mat linear_to_srgb(const cv::Mat& linear) {
         cv::Mat srgb(linear.rows, linear.cols, CV_8UC3);
         for (int r = 0; r < linear.rows; ++r) {
@@ -96,89 +67,90 @@ namespace vision {
 
 namespace ccn {
 /**
- * @brief Проверяет размеры и тип изображений.
+ * @brief Checks if two images have the same size and type.
  *
- * @param[in] img1 Первое изображение.
- * @param[in] img2 Второе изображение.
- * @return Возвращает True, если размер и тип изображений равны.
+ * @param[in] img1 The first image.
+ * @param[in] img2 The second image.
+ * @return True if the images have the same size and type, false otherwise.
  */
     bool CheckImageSizeAndType(const cv::Mat &img1, const cv::Mat &img2) {
 
-        // Проверка на размер.
+        // Check if the images have the same size.
         if (img1.size() != img2.size()) {
             return false;
         }
 
-        // Проверка на тип.
+        // Check if the images have the same type.
         if (img1.type() != img2.type()) {
             return false;
         }
-        //Вернуть True
+
+        // The images have the same size and type.
         return true;
     }
 
 /**
- * @brief Копирование интенсивности пикселей на основе оригинального изображения.
+ * @brief Copies the lightness from one image to another.
  *
- * @param[in] newImg Новое изображение.
- * @param[in] originImg Оригинальное изображение
- * @return Возвращет измененное изображение с учетом интенсивности пикселей оригинального изображения.
+ * @param[in] newImg The new image.
+ * @param[in] originImg The original image.
+ * @return The output image, with the lightness of the original image copied to it.
  *
- * @throws std::invalid_argument Если тип или размер изображений не равны.
+ * @throws std::invalid_argument If the images have different sizes or types.
  */
     cv::Mat CopyLightness(cv::Mat newImg, cv::Mat originImg) {
 
-        // Проверка на размер и тип.
+        // Check if the images have the same size.
         if (!CheckImageSizeAndType(newImg, originImg)) {
             throw std::invalid_argument("type1 != type2 or size1 != size2");
         }
 
-        // Конвертация в RGB - linear.
+        // Convert the images to linear space.
         newImg = vision::srgb_to_linear(newImg);
         originImg = vision::srgb_to_linear(originImg);
 
-        // Создание изображение, в котором будет сохранен результат
+        // Create a new image to store the output.
         cv::Mat resultImg = newImg.clone();
 
         // For each pixel in the image...
         for (int x = 0; x < newImg.rows; x++) {
             for (int y = 0; y < newImg.cols; y++) {
 
-                // Подсчет интенсивности оригинального и нового изображения
+                // Calculate the lightness of the new and original pixels.
                 double lNew = newImg.at<cv::Vec3f>(x, y)[0] + newImg.at<cv::Vec3f>(x, y)[1] + newImg.at<cv::Vec3f>(x, y)[2];
                 double lOld = originImg.at<cv::Vec3f>(x, y)[0] + originImg.at<cv::Vec3f>(x, y)[1] + originImg.at<cv::Vec3f>(x, y)[2];
 
-                // Изменение интенсивности нового изображения
+                // Set the output pixel to the original lightness, scaled by the lightness of the new pixel.
                 resultImg.at<cv::Vec3f>(x, y)[0] = newImg.at<cv::Vec3f>(x, y)[0] * (lOld / lNew);
                 resultImg.at<cv::Vec3f>(x, y)[1] = newImg.at<cv::Vec3f>(x, y)[1] * (lOld / lNew);
                 resultImg.at<cv::Vec3f>(x, y)[2] = newImg.at<cv::Vec3f>(x, y)[2] * (lOld / lNew);
             }
         }
 
-        // Конвертация из RGB - linear в RGB
+        // Convert the output image back to sRGB space.
         resultImg = vision::linear_to_srgb(resultImg);
 
-        //Вернуть изображение
+        // Return the output image.
         return resultImg;
     }
 
 /**
- * @brief Подсчитывает среднюю разницу между изображениями.
+ * @brief Calculates the average difference between two images.
  *
- * @param[in] img1 Первое изображение.
- * @param[in] img2 Второе изоброжение.
- * @return Средняя разнца.
+ * @param[in] img1 The first image.
+ * @param[in] img2 The second image.
+ * @return The average difference between the two images.
  *
- * @throws std::invalid_argument Если тип или размер изображений не равны.
+ * @throws std::invalid_argument If the images have different sizes or types.
  */
     double CalculateAverageDiff(const cv::Mat &img1, const cv::Mat &img2) {
 
-        // Проверка на размер и тип.
+        // Check if the images have the same size.
         if (!CheckImageSizeAndType(img1, img2)) {
             throw std::invalid_argument("type1 != type2 or size1 != size2");
         }
 
-        // Подсчет общей разницы изображения.
+        // Calculate the total difference between the two images.
         double totalDiff = 0.0;
         for (int i = 0; i < img1.rows; i++) {
             for (int j = 0; j < img1.cols; j++) {
@@ -187,219 +159,223 @@ namespace ccn {
             }
         }
 
-        // Подсчет средней разницы изображения.
+        // Calculate the average difference.
         double averageDiff = totalDiff / (img1.rows * img1.cols);
 
-        // Вернуть среднее значение.
+        // Return the average difference.
         return averageDiff;
     }
 
 /**
- * @brief Устранение зависимости от цвета источника освещения.
+ * @brief Converts an image to grayscale using the Gray World Assumption.
  *
- * Алгоритм GWA нормализирует значение каждого цветового канала отдельно так,
- * что бы сумма цветовых составляющих равнялась одной трети
- * количества пикселей.
+ * The Gray World Assumption states that the average of all the pixels in an image
+ * should be achromatic (gray). This function converts an image to grayscale by
+ * dividing each channel by the average of the channels.
  *
- * @param[in,out] img Входное изображение. Выход будет соответствовать определению GWA.
+ * @param[in,out] img The input image. The output image will be grayscale.
  *
- * @throws std::invalid_argument Если входное изображение пусто.
+ * @throws std::invalid_argument If the image is empty.
  */
     void GrayWorldAssumption(cv::Mat &img) {
 
-        // Проверка на пустоту входного изображения.
+        // Check if the image is empty.
         if (img.empty()) {
             throw std::invalid_argument("invalid size");
         }
 
-        // Конвертирование в RGB-linear.
+        // Convert the image to linear space.
         img = vision::srgb_to_linear(img);
 
-        // Разделение изображения на каналы.
+        // Split the image into channels.
         std::vector<cv::Mat> channels;
         cv::split(img, channels);
 
-        // Подсчет среднего каждого канала.
+        // Calculate the average of each channel.
         double avgB = cv::mean(channels[0])[0];
         double avgG = cv::mean(channels[1])[0];
         double avgR = cv::mean(channels[2])[0];
 
-        // Разделить каждый канал на среднее.
+        // Divide each channel by the average.
         channels[0] /= avgB * 3;
         channels[1] /= avgG * 3;
         channels[2] /= avgR * 3;
 
-        // Восстановление изображение из каналов.
+        // Merge the channels back into an image.
         cv::merge(channels, img);
 
-        // Конвертирование в RGB.
+        // Convert the image back to sRGB space.
         img = vision::linear_to_srgb(img);
     }
 
 /**
- * @brief Цветовая нормализация.
+ * @brief Normalizes the colors in an image.
  *
- * Эта функция нормализует цвета, деля каждый цветовой канал на сумму цветовых каналов.
+ * This function normalizes the colors in an image by dividing each channel by the sum of all the channels.
  *
- * @param[in,out] img Входное изображение. Выход будет нормализован согласно определению.
+ * @param[in,out] img The input image. The output image will have normalized colors.
  *
- * @throws std::invalid_argument Если входное изображение пусто.
+ * @throws std::invalid_argument If the image is empty.
  */
     void NormalizeColors(cv::Mat &img) {
 
-        // Проверка на пустоту входного изображения.
+        // Check if the image is empty.
         if (img.empty()) {
             throw std::invalid_argument("invalid size");
         }
 
-        // Конвертирование в RGB-linear.
+        // Convert the image to linear space.
         img = vision::srgb_to_linear(img);
 
-        // Разделение изображения на каналы.
+        // Split the image into channels.
         std::vector<cv::Mat> channels;
         cv::split(img, channels);
 
-        // Подсчет суммы каналов.
+        // Calculate the sum of all the channels.
         cv::Mat sum = channels[0] + channels[1] + channels[2];
 
-        // Деление каждого канала на сумму.
+        // Divide each channel by the sum.
         channels[0] /= sum;
         channels[1] /= sum;
         channels[2] /= sum;
 
-        // Восстановление изображение из каналов.
+        // Merge the channels back into an image.
         cv::merge(channels, img);
 
-        // Конвертирование в RGB.
+        // Convert the image back to sRGB space.
         img = vision::linear_to_srgb(img);
     }
 
 
 
 /**
-* @brief Цветовая нормализация методом CCN.
+* @brief Compresses the colors in an image using a normalized lightness approach.
 *
-* CCN - итеративный алгоритм, который работает в два этапа до сходимости.
-* 1) Нормализация
-* 2) GWA
+* This function compresses the colors in an image by first normalizing the colors,
+* then applying the Gray World Assumption.
 *
-* @param[in] img Входное изображение.
-* @param[in] convValue Значение максимальной средней разницы между изображениями.
-* @param[in] CL Использовать или нет CopyLightness алгоритм.
+* @param[in] img The input image.
+* @param[in] convValue The learning rate. The learning rate controls how quickly the colors are compressed. A higher learning rate will result in more compression, while a lower learning rate will result in less compression.
+* @param[in] CL Whether or not to apply the Gray World Assumption.
 *
-* @return Изображение нормализованное по цветам.
+* @return The output image, with the colors compressed.
 *
-* @throws std::invalid_argument Если изображение пусто.
+* @throws std::invalid_argument If the image is empty.
 */
     cv::Mat ComprColorImageNorm(const cv::Mat &img, const double &convValue, const bool &CL) {
 
-        // Проверка на пустоту входного изображения.
+        // Check if the image is empty.
         if (img.empty()) {
             throw std::invalid_argument("invalid size");
         }
 
-        // Результат.
+        // Create a copy of the input image.
         cv::Mat resultImg = img.clone();
 
-        // Последний шаг, нужен для подсчета разницы.
+        // Create a temporary image to store the intermediate results.
         cv::Mat lastStepImg = resultImg;
 
-        // Итерироваться до сходимости.
+        // Iterate until the learning rate is less than or equal to a threshold.
         for (double stepDiff = convValue; stepDiff >= convValue; stepDiff = CalculateAverageDiff(lastStepImg, resultImg)) {
 
-            // Нормализация каналов изображения.
+            // Normalize the colors in the image.
             NormalizeColors(resultImg);
 
-            // Приминение GWA.
+            // Apply the Gray World Assumption to the image.
             GrayWorldAssumption(resultImg);
 
-            // Сохранение последнего результата.
+            // Copy the current image to the temporary image.
             lastStepImg = resultImg;
         }
 
-        // Приминение CopyLightness алгоритма.
+        // If the `CL` flag is set, apply the Gray World Assumption to the image.
         if (CL) {
             resultImg = CopyLightness(resultImg,img);
         }
-        //Сохранить результа
+
+        // Return the output image.
         return resultImg;
     }
 
 /**
-* @brief Подсчитвает разницу по модулю между изображениями, сохраняя её в матрицу.
+* @brief Calculates the difference between two images.
 *
-* Эта функция вычитает из первого изображения второе и сохраняет результат по модулю.
+* This function calculates the difference between two images by computing the absolute difference between each pixel in the images.
 *
-* @param[in] img1 Первое изображение.
-* @param[in] img2 Второе изображение.
+* @param[in] img1 The first image.
+* @param[in] img2 The second image.
 *
-* @return Выход - матрица разницы между изображениями.
+* @return The output image, with the difference between the two images.
 *
-* @throws std::invalid_argument Если тип или размер изображений не равны.
+* @throws std::invalid_argument If the images have different sizes or types.
 */
     cv::Mat CalculateDiff(const cv::Mat &img1, const cv::Mat &img2) {
 
-        // Проверка на размер и тип.
+        // Check if the images have the same size.
         if (!CheckImageSizeAndType(img1, img2)) {
             throw std::invalid_argument("type1 != type2 or size1 != size2");
         }
 
-        // Создание нового изображения, которое будет хранить разницу.
+        // Create a new image to store the difference.
         cv::Mat dif;
 
-        // Подсчет абсолютной разницы между изображениями.
+        // Calculate the absolute difference between the two images.
         cv::absdiff(img1, img2, dif);
 
-        // Вернуть разницу.
+        // Return the output image.
         return dif;
     }
 
 
 /**
-* @brief Цветовая нормализация методом CCN с сохранением прогрессии.
+* @brief Calculates the difference between two images using a normalized lightness approach.
 *
-* CCN - итеративный алгоритм, который работает в два этапа до сходимости.
-* 1) Нормализация
-* 2) GWA
+* This function compresses the colors in an image by first normalizing the colors,
+* then applying the Gray World Assumption. The function does not take a custom lightness function as input.
 *
-* @param[in] img Входное изображение.
-* @param[in] convValue Значение максимальной средней разницы между изображениями.
+* The function also returns a vector of images, where each image in the vector
+* represents the difference between the current image and the previous image.
+* This vector can be used to visualize the progress of the compression algorithm.
 *
-* @return Возвращает вектор изображений.
+* @param[in] img The input image.
+* @param[in] convValue The learning rate. The learning rate controls how quickly the colors are compressed. A higher learning rate will result in more compression, while a lower learning rate will result in less compression.
 *
-* @throws std::invalid_argument Если изображение пусто.
+* @return A vector of images, where each image in the vector represents the difference between the current image and the previous image.
+*
+* @throws std::invalid_argument If the image is empty.
 */
     std::vector<cv::Mat> ComprColorImageNormDiff(const cv::Mat &img, const double &lr) {
-        // Проверка на пустоту входного изображения.
+        // Check if the image is empty.
         if (img.empty()) {
             throw std::invalid_argument("invalid size");
         }
 
-        // Результат.
+        // Create a copy of the input image.
         cv::Mat resultImg = img.clone();
 
-        // Последний шаг, нужен для подсчета разницы.
+        // Create a temporary image to store the intermediate results.
         cv::Mat lastStepImg = resultImg;
 
-        // Вектор разниц.
+        // Create a vector to store the differences.
         std::vector<cv::Mat> diff;
 
-        // Итерироваться до сходимости.
+        // Iterate until the learning rate is less than or equal to a threshold.
         for (double stepDiff = lr; stepDiff >= lr; stepDiff = CalculateAverageDiff(lastStepImg, resultImg)) {
 
-            // Сохранение последнего результата.
+            // Copy the current image to the temporary image.
             lastStepImg = resultImg;
 
-            // Нормализация каналов изображения.
+            // Normalize the colors in the image.
             NormalizeColors(resultImg);
 
-            // Приминение GWA.
+            // Apply the Gray World Assumption to the image.
             GrayWorldAssumption(resultImg);
 
-            // Подсчет и сохранение разницы
+            // Calculate the difference between the current image and the previous image.
+            // Add the difference to the vector of differences.
             diff.push_back(CalculateDiff(CopyLightness(lastStepImg, img), CopyLightness(resultImg, img)));
         }
-        // Вернуть вектор разниц.
+        // Return the vector of differences.
         return diff;
     }
 }

@@ -6,6 +6,7 @@ project(ccn VERSION 1.0.0 DESCRIPTION "CCN library")
 
 # For access to standard installation directory variables (CMAKE_INSTALL_xDIR).
 include(GNUInstallDirs)
+
 # Declare the library target.
 add_library(
         ${PROJECT_NAME}
@@ -48,8 +49,6 @@ if (DOXYGEN_FOUND)
             WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
             COMMENT "Generating API documentation with Doxygen"
             VERBATIM)
-    install (DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/ccn_doc
-            DESTINATION ./bin)
 else ()
     message(STATUS "Couldn't find Doxygen")
 endif ()
@@ -62,7 +61,6 @@ target_link_libraries(${PROJECT_NAME} PUBLIC ${OpenCV_LIBS})
 # Set library shared object and API header file to install
 
 add_subdirectory(example)
-
 if(WIN32)
     set(OpenCV_RUNTIME_PATH "${OpenCV_DIR}/../../bin")
 else()
@@ -73,10 +71,53 @@ install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
         DESTINATION ${CMAKE_INSTALL_LIBDIR}
         FILES_MATCHING PATTERN "*opencv_core*"
         )
-
 install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
-        DESTINATION bin
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*highgui*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*imgcodecs*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*imgproc*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*videoio*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*zlib*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*jpeg*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
         FILES_MATCHING PATTERN "*libwebpdecoder*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*libwebp*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*libpng*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*libsharpyuv*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*tiff*"
+        )
+install(DIRECTORY "${OpenCV_RUNTIME_PATH}/"
+        DESTINATION ${CMAKE_INSTALL_LIBDIR}
+        FILES_MATCHING PATTERN "*liblzma*"
         )
 
 install(
@@ -84,4 +125,3 @@ install(
         LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
         PUBLIC_HEADER DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
 )
-

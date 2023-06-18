@@ -3,7 +3,7 @@
 
 /**
  * @file ccn.hpp
- * @brief Этот файл хранит объявления.
+ * @brief This file contains the declaration of the CCN algorithm.
  */
 
 #include "vector"
@@ -20,6 +20,6 @@ namespace ccn {
     void NormalizeColors(cv::Mat &img);
     cv::Mat ComprColorImageNorm(const cv::Mat &img, const double &convValue = 0.1, const bool &CL = true);
     cv::Mat CalculateDiff(const cv::Mat &img1, const cv::Mat &img2);
-    std::vector<cv::Mat> ComprColorImageNormDiff(const cv::Mat &img, const double &lr = 0.1);
+    std::vector<cv::Mat> ComprColorImageNormDiff(const cv::Mat &img, const double &lr = 1);
 }
 #endif // COMPR_COLOR_IMAGE_NORM_HPP
