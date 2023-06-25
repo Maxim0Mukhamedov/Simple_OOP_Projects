@@ -3,10 +3,10 @@
 
 /**
  * @file ccn.hpp
- * @brief This file contains the declaration of the CCN algorithm.
+ * @brief Этот файл хранит объявления.
  */
 
-#include "vector"
+#include <vector>
 
 namespace cv {
     class Mat;
