@@ -3,7 +3,6 @@
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
 
-#include <string>
 #include <iostream>
 
 cv::Mat mergeImage(cv::Mat img1, cv::Mat img2)
@@ -17,64 +16,55 @@ cv::Mat mergeImage(cv::Mat img1, cv::Mat img2)
 }
 // save display save-directory input-directory name of image(from input) conv-value CopyLightness conv-progress
 int main(int argc, char **argv ) {
-    // Load the input 3RGB image.
     bool save = false;
     bool show = false;
     bool copyLightness = false;
     bool convProgress = false;
     double conValue = 0.1;
-    std::string saveDirectory = INSTALL_PATH + static_cast<std::string>("/test_output");
-    std::string inputDirectory = INSTALL_PATH + static_cast<std::string>("/test_input/test_image.jpg");
-    for (int i = 1; i < argc; i ++) {
-        if (static_cast<std::string>(argv[i]) == "-S") {
-            save = true;
-        } else if (static_cast<std::string>(argv[i]) == "-D") {
-            show = true;
-        } else if (static_cast<std::string>(argv[i]) == "-L") {
-            copyLightness = true;
-        } else if (static_cast<std::string>(argv[i]) == "-P") {
-            convProgress = true;
-        } else if (static_cast<std::string>(argv[i]) == "-h" || static_cast<std::string>(argv[i]) == "-help"){
-            std::cout << "ВОЗМОЖНЫЕ КЛЮЧИ CNN\n";
-            std::cout << "-S : Сохранить результат в стандартную директорию (./test_output/)" << '\n';
-            std::cout << "-D : Вывести результат в виде окна" << '\n';
-            std::cout << "-L : Использовать CopyLightness" << '\n';
-            std::cout << "-P : Рассчитать прогресс сходимости" << '\n';
-            std::cout << "-h (-help): Показать возможные ключи" << std::endl;
-            std::cout << "Следующие ключи нужно использовать по образцу: -[param]=[option]" << '\n';
-            std::cout << "-v : Изменить значение разницы между изображениями, достаточное для остановки алгоритма" << '\n';
-            std::cout << "-i : Указать путь к изображению" << '\n';
-            std::cout << "-s : Указать путь для сохранения результатов" << '\n';
-            return 0;
-        } else if (static_cast<std::string>(argv[i]).size() > 3) {
-            std::string param = static_cast<std::string>(argv[i]);
-            if (param[0] == '-' && param[2] == '=') {
-                if (param[1] == 'v') {
-                    conValue = std::stod(param.substr(3,param.size() - 3));
-                } else if (param[1] == 'i') {
-                    inputDirectory = param.substr(3,param.size() - 3);
-                    for (int j = i + 1; j < argc; j++) {
-                        if (static_cast<std::string>(argv[j])[0] != '-') {
-                            inputDirectory += (" " + static_cast<std::string>(argv[j]));
-                        }
-                    }
-                } else if (param[1] == 's') {
-                    saveDirectory = param.substr(3,param.size() - 3);
-                    save = true;
-                    for (int j = i + 1; j < argc; j++) {
-                        if (static_cast<std::string>(argv[j])[0] != '-') {
-                            saveDirectory += (" " + static_cast<std::string>(argv[j]));
-                        }
-                    }
-                } else {
-                    throw std::invalid_argument("invalid argument");
-                }
-            } else {
-                throw std::invalid_argument("invalid argument");
-            }
-        } else {
-            throw std::invalid_argument("invalid argument");
-        }
+    cv::String saveDirectory = INSTALL_PATH + static_cast<cv::String>("/test_output");
+    cv::String inputDirectory = INSTALL_PATH + static_cast<cv::String>("/test_input/test_image.jpg");
+    const cv::String keys =
+            "{help h | | вывести подсказку }"
+            "{s | | указать директорию сохранения }"
+            "{i | | указать путь к входному изображению }"
+            "{S | | сохранить изображение(если не указано, в стандартную [path]/bin/test_output) }"
+            "{D | | вывести изображение }"
+            "{L | | использовать CopyLightness алгоритм }"
+            "{P | | вычислить прогрессию алгоритма (сохраняется и выводится вместе с результатом CCN) }"
+            "{v | | указать пороговое значение сходимости изображения }"
+    ;
+    cv::CommandLineParser parser(argc, argv, keys);
+    parser.about("CCN v1.0.0");
+    if (parser.has("help"))
+    {
+        parser.printMessage();
+        return 0;
+    }
+    if (parser.has("s")) {
+        saveDirectory = parser.get<cv::String>("s");
+    }
+    if (parser.has("i")) {
+        inputDirectory = parser.get<cv::String>("i");
+    }
+    if (parser.has("S")) {
+        save = parser.get<bool>("S");
+    }
+    if (parser.has("D")) {
+        show = parser.get<bool>("D");
+    }
+    if (parser.has("L")) {
+        copyLightness = parser.get<bool>("L");
+    }
+    if (parser.has("P")) {
+        convProgress = parser.get<bool>("P");
+    }
+    if (parser.has("v")) {
+        conValue = parser.get<double>("v");
+    }
+    if (!parser.check())
+    {
+        parser.printErrors();
+        return 0;
     }
     cv::Mat image = cv::imread(inputDirectory);
     if (image.empty()) {
